@@ -8,3 +8,7 @@ Mods/
 probe*.py
 diag*.py
 extract_sc2.py
+
+# Python 缓存
+__pycache__/
+*.pyc

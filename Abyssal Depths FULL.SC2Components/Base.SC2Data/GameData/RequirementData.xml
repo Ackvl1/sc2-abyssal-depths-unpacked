@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="ArmBroodlingEscortHighEnergy" parent="ArmBroodlingEscort">
+        <NodeArray index="Use" Link="AndEqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedO3008082452"/>
+        <NodeArray index="Show" Link="OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedO3008082452"/>
+    </CRequirement>
+    <CRequirement id="ArmBroodlingEscortHighEnergy2" parent="ArmBroodlingEscort">
+        <NodeArray index="Use" Link="AndLTCountUnitBroodlingEscortQueuedOrBetterAtUnit1EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+        <NodeArray index="Show" Link="EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="ArmBroodlingEscortHighEnergy22" parent="ArmBroodlingEscort">
+        <NodeArray index="Use" Link="AndLTCountUnitBroodlingEscortQueuedOrBetterAtUnit2EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+        <NodeArray index="Show" Link="EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="ArmBroodlingEscortHighEnergy3" parent="ArmBroodlingEscort">
+        <NodeArray index="Use" Link="AndLTCountUnitBroodlingEscortQueuedOrBetterAtUnit5EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit1EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+        <NodeArray index="Show" Link="EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="ArmBroodlingEscortHighEnergy4" parent="ArmBroodlingEscort">
+        <NodeArray index="Use" Link="AndEqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueued4117925924"/>
+    </CRequirement>
+    <CRequirement id="ArmBroodlingEscortHighEnergy5">
+        <EditorCategories value="Race:Protoss,TechType:Unit"/>
+        <CanBeSuppressed index="Use" value="0"/>
+        <NodeArray index="Use" Link="AndEqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedO1512576801"/>
+    </CRequirement>
+    <CRequirement id="BuildAutoTurret">
+        <NodeArray index="Use" Link="AndLT263461205CountUnitAutoTurretInProgressOrBetter8LTCountUpgradeTurretBuildCounterQueuedOrBetter8NotCountBehaviorColdCompleteOnlyAtUnitNotCountBehaviorFrostbiteCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="BuildPsiDisrupter">
+        <NodeArray index="Use" Link="AndLT3730171456CountUnitPsiIndoctrinatorInProgressOrBetter6LTCountUpgradePsiDisruptorBuildCounterQueuedOrBetter6NotCountBehaviorColdCompleteOnlyAtUnitNotCountBehaviorFrostbiteCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="Sieging">
+        <NodeArray index="Use" Link="AndEqCountBehaviorDisableMovementQueuedOrBetter1EqCountBehaviorDisableMovement2QueuedOnly0"/>
+        <NodeArray index="Show" Link="AndEqCountBehaviorDisableMovementQueuedOrBetter1EqCountBehaviorDisableMovement2QueuedOnly0"/>
+    </CRequirement>
+    <CRequirement id="Sieging2">
+        <NodeArray index="Use" Link="AndEqCountBehaviorDisableMovementQueuedOrBetterAtUnit0"/>
+        <NodeArray index="Show" Link="AndEqCountBehaviorDisableMovementQueuedOrBetterAtUnit0"/>
+    </CRequirement>
+</Catalog>

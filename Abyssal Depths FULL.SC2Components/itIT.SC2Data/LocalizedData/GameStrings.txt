@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=Lo scanner di superficie interplanetario ha rilevato grandi quantità di risorse sul pianeta 37/ dataset C. Problema: si trova in fondo a un oceano.<n/><n/>Inviata al TLMC sponsorizzato da Shopify<n/>Creata da KillerSmile
+DocInfo/DescShort=1v1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- Diminuito l'effetto HDR delle crepe a 1
+DocInfo/PatchNote003=- Migliorati i dislivelli nella parte centrale della mappa
+DocInfo/PatchNote004=- Aggiornamento ai dislivelli dei Mietitori: è stata mantenuta la forma originale, ma non è più possibile posizionarci un Carro d'assedio in Assetto d'assedio
+MapInfo/Player00/Name=Neutrale
+MapInfo/Player01/Name=Giocatore 1
+MapInfo/Player02/Name=Giocatore 2
+MapInfo/Player03/Name=Nemico

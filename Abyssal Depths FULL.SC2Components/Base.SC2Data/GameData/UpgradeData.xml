@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="BeamRifleUnlocked">
+        <EffectArray Operation="Set" Reference="Weapon,HighTemplarWeapon,Icon" Value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
+        <EffectArray Operation="Set" Reference="Effect,AdvancedPointDefenseLaserDamage,Chance" Value="1"/>
+        <EffectArray Operation="Set" Reference="Weapon,HighTemplarWeapon,Range" Value="7.5"/>
+        <EffectArray Operation="Set" Reference="Weapon,HighTemplarWeapon,MinScanRange" Value="7.5"/>
+    </CUpgrade>
+    <CUpgrade id="Bloodlust">
+        <Icon value="Assets\Textures\btn-ability-zerg-creepteleport.dds"/>
+        <EffectArray Operation="Multiply" Reference="Unit,InfestorTerran,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Zergling,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,RoachVile,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,InfestedCivilian,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,InfestorTerran,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,DehakaMirrorImage,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,HotSRaptor,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,RoachCorpser,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,PrimalTownHallUprooted,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Blightbringer,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Lurker,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,BloodZombie,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Kaboomer,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Hunterling,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,DefilerMP,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Dehaka,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Abomination,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,InfestedAbomination,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,FlyingZombie,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,GenesplicerUprooted,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Anubalisk,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,LocustMP,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Anubalight,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,LegionnaireZombie,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Mutalisk,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Devourer2,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,QueenCoop,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Hunter,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Predator2,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Monstrosity,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,LocustMP3,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Overseer,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,KerriganInfestBroodling,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Queen2,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Queen3,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Oculus,Speed" Value="1.0625"/>
+        <EffectArray Operation="Multiply" Reference="Unit,Scourgeling,Speed" Value="1.0625"/>
+        <MaxLevel value="96"/>
+    </CUpgrade>
+    <CUpgrade id="CorrosivePlasmaEquipped">
+        <EffectArray index="0" Value="PlasmaRifleDamage2"/>
+        <EffectArray index="1" Reference="Effect,PlasmaRifleDamage2,ArmorReduction"/>
+        <EffectArray Operation="Set" Reference="Weapon,HighTemplarWeapon,Range" Value="7.5"/>
+    </CUpgrade>
+    <CUpgrade id="LongRangeScopeEquipped">
+        <EffectArray index="0" Value="PlasmaRifleDamage2"/>
+    </CUpgrade>
+    <CUpgrade id="OverloadWeaponEquipped">
+        <EffectArray index="2" Reference="Effect,PlasmaRifleDamage2,Amount"/>
+    </CUpgrade>
+</Catalog>

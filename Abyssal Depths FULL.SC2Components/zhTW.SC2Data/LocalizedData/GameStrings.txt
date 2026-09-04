@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=行星間地表掃描器在37號行星/資料集C上發現了大量資源。不過問題是：資源都在海底。<n/><n/>參加由Shopify共同贊助的Teamliquid地圖競賽的作品。<n/>創作者：KillerSmile
+DocInfo/DescShort=1對1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- 將HDR色調往下修正至1.0
+DocInfo/PatchNote003=- 調整地圖中央的山崖
+DocInfo/PatchNote004=- 死神可上下的懸崖更新：保持原先外型，但不再能夠停放攻城模式的坦克
+MapInfo/Player00/Name=中立
+MapInfo/Player01/Name=玩家1
+MapInfo/Player02/Name=玩家2
+MapInfo/Player03/Name=敵對

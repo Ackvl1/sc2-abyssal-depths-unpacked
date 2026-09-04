@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=Le radar interplanétaire de surface a détecté d’importantes quantités de ressources sur la planète 37 (ensemble de données C). Le problème est qu’elles se trouvent au fond d’un océan.<n/><n/>Présentée lors du concours de cartes organisé par TL avec la participation de Shopify.<n/>Créée par : KillerSmile
+DocInfo/DescShort=1c1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=– HDR des fissures réduit à 1,0.
+DocInfo/PatchNote003=– Ajustement des falaises au milieu de la carte.
+DocInfo/PatchNote004=– Mise à jour des falaises auxquelles peuvent accéder les faucheurs : leur forme originale est conservée, mais les chars ne peuvent plus passer en mode Siège dessus.
+MapInfo/Player00/Name=Neutre
+MapInfo/Player01/Name=Personne 1
+MapInfo/Player02/Name=Personne 2
+MapInfo/Player03/Name=Hostile

@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=행성간 표면 탐지기가 제37행성/ 데이터 세트 C에서 다량의 자원을 발견했습니다. 문제는 자원이 있는 지점이 바다 밑바닥 아래라는 점입니다.<n/><n/>Shopify 후원 팀리퀴드 지도 콘테스트 제출작<n/>제작자: KillerSmile
+DocInfo/DescShort=1대1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- 균열의 HDR이 1.0으로 감소했습니다.
+DocInfo/PatchNote003=- 지도 중앙의 언덕을 조정했습니다.
+DocInfo/PatchNote004=- 사신 언덕을 업데이트했습니다. 형태는 그대로 유지되지만, 더는 언덕에서 공성 전차로 포격할 수 없습니다.
+MapInfo/Player00/Name=중립
+MapInfo/Player01/Name=플레이어 1
+MapInfo/Player02/Name=플레이어 2
+MapInfo/Player03/Name=적대

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorUnit id="BroodLord">
+        <Model value="BroodLordEx122"/>
+        <Scale value="1.750000"/>
+    </CActorUnit>
+    <CActorUnit id="BroodLord2" parent="GenericUnitMorph" unitName="Xenoray">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="PhysicsDeathsSwarmAir"/>
+        <Macros value="PhysicsDeathsVoidAir"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <AcceptedHostedPropTransfers index="Scale" value="0"/>
+        <On index="69" Terms="ActorCreation" Send="$Birth 0 0.000000 -1.000000 0.000000"/>
+        <On index="70" Terms="Abil.BroodLordHangar.Launch" Send="AnimPlay SWE Stand,Work,End"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Broodlord_Land"/>
+        <On Terms="Effect.InfestedVentSpawnBroodLordCreateBroodLord.Create" Send="$Birth"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom Xenoray" Send="AnimBracketStop BSD"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceCastStart" Send="AnimBracketStart Burrow Burrow,01 Burrow,01 Burrow,01 DontResetOnUnhide 0.140000 AsTimeScale"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceChannelStart" Send="AnimClear Burrow"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceChannelStart" Send="AnimPlay Unburrow Unburrow DontResetOnUnhide -1.000000 -1.000000 0.140000 AsTimeScale"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceFinishStart" Send="AnimClear Unburrow 6.000000"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Unburrow"/>
+        <On Terms="Behavior.DisableMovement.On" Send="AnimPlay Cast Walk,Zero,One PlayForever -1.000000 -1.000000 1.750000 AsTimeScale"/>
+        <On Terms="Behavior.DisableMovement.Off" Send="AnimClear Cast"/>
+        <On Terms="AbilMorph.MorphToXenowraith.Start; MorphFrom Xenoray" Send="Destroy"/>
+        <HostSiteOps Ops="SOpBankerBroodLord"/>
+        <Model value="BroodLordEx12"/>
+        <Scale value="1.450000"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <Baselines index="Stand" BlendIn="1.000000" BlendOut="1.000000"/>
+        <Baselines index="Walk" BlendIn="1.000000" BlendOut="1.000000"/>
+        <BuildModel value="BroodLordEx12"/>
+        <DeathArray index="Normal" ModelLink="BroodLordEx1Death" SoundLink="BroodLordAquatic_Death"/>
+        <DeathCustoms>
+            <ActorModel value="BroodLordDeathRagdoll"/>
+            <ModelLink value="BroodLordDeathRagdoll"/>
+            <Name value="RagdollBasic"/>
+            <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms>
+            <ModelLink value="DeathVoidShadowLarge"/>
+            <SoundLink value="ShadowUnit_DeathFX"/>
+            <VoiceLink value="ShadowUnit_DeathVox"/>
+            <Name value="Shadow"/>
+        </DeathCustoms>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionFlier"/>
+        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        <PlacementModel value="BroodLordEx12"/>
+        <PlacementSound value="Zerg_BuildingPlacement"/>
+        <PortraitModel value="BroodLord_Aquatic_Portrait"/>
+        <TerrainSquibs>
+            <MovementDistance value="2.000000,3.000000"/>
+            <IdlePeriod value="1.500000,5.000000"/>
+            <RangeDown value="5.000000"/>
+            <RangeDownFade value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMassive"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1.6093"/>
+        <BarOffset value="60"/>
+        <BarWidth value="108"/>
+        <GlossaryAnim value="Walk"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-xenoray.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-xenoray.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level0.dds"/>
+        <NameOffset value="80"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-upgrade-zerg-swarmfrenzy.dds"/>
+        <SoundArray index="Birth" value="BroodLordAquatic_Death"/>
+        <SoundArray index="Ready" value="BroodLordAquatic_Ready"/>
+        <SoundArray index="What" value="BroodLordAquatic_What"/>
+        <SoundArray index="Yes" value="BroodLordAquatic_Yes"/>
+        <SoundArray index="Attack" value="BroodLordAquatic_Attack"/>
+        <SoundArray index="Pissed" value="BroodLordAquatic_Pissed"/>
+        <StatusColors index="Shields">
+            <ColorArray index="0" value="255,0,128,0"/>
+        </StatusColors>
+        <UnitIcon value="Assets\Textures\btn-unit-xenoray.dds"/>
+        <UnitModelFrameActor value="BroodLordUnitModelFrameActor"/>
+        <VitalColors index="Shields">
+            <ColorArray value="255,0,128,0"/>
+        </VitalColors>
+        <VitalNames index="Shields" value="Vital/ZergShields"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-xenoray.dds"/>
+        </Wireframe>
+        <WireframeShieldColor value="255,0,128,0"/>
+        <HighlightTooltip value="Unit/Name/BroodLord2"/>
+    </CActorUnit>
+    <CActorUnit id="BroodLord22" parent="GenericUnitMorph" unitName="Xenowraith">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="PhysicsDeathsSwarmAir"/>
+        <Macros value="PhysicsDeathsVoidAir"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <AcceptedHostedPropTransfers index="Scale" value="0"/>
+        <On index="69" Terms="ActorCreation" Send="$Birth 0 0.000000 -1.000000 0.000000"/>
+        <On index="70" Terms="Abil.BroodLordHangar.Launch" Send="AnimPlay SWE Stand,Work,End"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Broodlord_Land"/>
+        <On Terms="Effect.InfestedVentSpawnBroodLordCreateBroodLord.Create" Send="$Birth"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceCastStart" Send="AnimBracketStart Burrow Burrow,01 Burrow,01 Burrow,01 DontResetOnUnhide 0.140000 AsTimeScale"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceChannelStart" Send="AnimClear Burrow"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceChannelStart" Send="AnimPlay Unburrow Unburrow DontResetOnUnhide -1.000000 -1.000000 0.140000 AsTimeScale"/>
+        <On Terms="Abil.AbathurDeepTunnel4.SourceFinishStart" Send="AnimClear Unburrow 6.000000"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo Xenowraith; MorphFrom MassiveCocoon" Send="Create"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo Xenowraith; MorphFrom MassiveCocoon" Send="AnimBracketStart BSD Birth Stand Death"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Unburrow"/>
+        <On Terms="Behavior.DisableMovement.On" Send="AnimPlay Cast Walk,Zero,One PlayForever -1.000000 -1.000000 1.750000 AsTimeScale"/>
+        <On Terms="Behavior.DisableMovement.Off" Send="AnimClear Cast"/>
+        <HostSiteOps Ops="SOpBankerBroodLord"/>
+        <Model value="BroodLordEx123"/>
+        <Scale value="1.450000"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <Baselines index="Stand" BlendIn="1.000000" BlendOut="1.000000"/>
+        <Baselines index="Walk" BlendIn="1.000000" BlendOut="1.000000"/>
+        <BuildModel value="BroodLordEx123"/>
+        <DeathArray index="Normal" ModelLink="BroodLordEx1Death" SoundLink="BroodLordAquatic_Death"/>
+        <DeathCustoms>
+            <ActorModel value="BroodLordDeathRagdoll"/>
+            <ModelLink value="BroodLordDeathRagdoll"/>
+            <Name value="RagdollBasic"/>
+            <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollNuke" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollFire" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Fire"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollAcid" InheritsFrom="RagdollBasic">
+            <BodySquibs Name="Acid"/>
+        </DeathCustoms>
+        <DeathCustoms Name="RagdollOverkillDPRH" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollOverkillDOI" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms Name="RagdollMidair" InheritsFrom="RagdollBasic"/>
+        <DeathCustoms>
+            <ModelLink value="DeathVoidShadowLarge"/>
+            <SoundLink value="ShadowUnit_DeathFX"/>
+            <VoiceLink value="ShadowUnit_DeathVox"/>
+            <Name value="Shadow"/>
+        </DeathCustoms>
+        <DeathActorModel value="UnitDeathModelWithDeathMotionFlier"/>
+        <PhysicsMatchKeysOrdered value="BasicAir,Basic"/>
+        <PlacementModel value="BroodLordEx123"/>
+        <PlacementSound value="Zerg_BuildingPlacement"/>
+        <PortraitModel value="BroodLord_Aquatic_Portrait"/>
+        <TerrainSquibs>
+            <MovementDistance value="2.000000,3.000000"/>
+            <IdlePeriod value="1.500000,5.000000"/>
+            <RangeDown value="5.000000"/>
+            <RangeDownFade value="1.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleMassive"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1.6093"/>
+        <BarOffset value="60"/>
+        <BarWidth value="132"/>
+        <GlossaryAnim value="Walk"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-xenowraith.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-xenowraith.dds"/>
+        <HighlightTooltip value="Unit/Name/BroodLord22"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level0.dds"/>
+        <NameOffset value="80"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-upgrade-zerg-swarmfrenzy.dds"/>
+        <SoundArray index="Birth" value="BroodLordAquatic_Death"/>
+        <SoundArray index="Ready" value="BroodLordAquatic_Ready"/>
+        <SoundArray index="Help" value="Xenoray_Help"/>
+        <SoundArray index="What" value="BroodLordAquatic_What"/>
+        <SoundArray index="Yes" value="BroodLordAquatic_Yes"/>
+        <SoundArray index="Attack" value="BroodLordAquatic_Attack"/>
+        <SoundArray index="Pissed" value="BroodLordAquatic_Pissed"/>
+        <SoundArray index="Movement" value="Xenoray_Movement"/>
+        <SoundArray index="Turning" value="Xenoray_Turning"/>
+        <SoundArray index="Board" value="Xenoray_Board"/>
+        <SoundArray index="Click" value="Xenoray_Click"/>
+        <SoundArray index="ClickError" value="Xenoray_ClickError"/>
+        <SoundArray index="Highlight" value="Xenoray_Highlight"/>
+        <StatusColors index="Shields">
+            <ColorArray index="0" value="255,0,128,0"/>
+        </StatusColors>
+        <UnitIcon value="Assets\Textures\btn-unit-xenowraith.dds"/>
+        <UnitModelFrameActor value="BroodLordUnitModelFrameActor"/>
+        <VitalColors index="Shields">
+            <ColorArray value="255,0,128,0"/>
+        </VitalColors>
+        <VitalNames index="Shields" value="Vital/ZergShields"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-xenowraith.dds"/>
+        </Wireframe>
+        <WireframeShieldColor value="255,0,128,0"/>
+    </CActorUnit>
+    <CActorAction id="BroodLordAttackA">
+        <On Terms="ActorOrphan" Send="Destroy"/>
+    </CActorAction>
+    <CActorMissile id="BroodLordAttackBMissile">
+        <Model value="Broodling_Webby"/>
+        <Scale value="0.750000"/>
+    </CActorMissile>
+    <CActorUnit id="Broodling">
+        <Model value="Symbiote_Webby_Collection"/>
+        <Scale value="0.750000"/>
+        <MinimapIconScale value="0.750000"/>
+        <BarWidth value="20"/>
+        <GroupIcon>
+            <Image index="0" value="Assets\Textures\wireframe-collection-webby-symbiote.dds"/>
+        </GroupIcon>
+        <UnitIcon value="Assets\Textures\btn-unit-collection-webby-symbiote.dds"/>
+    </CActorUnit>
+    <CActorMissile id="BroodlingEscort">
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <Model value="Broodling_Webby"/>
+        <Scale value="0.750000"/>
+        <MinimapIconScale value="0.750000"/>
+        <BarWidth value="20"/>
+        <GroupIcon>
+            <Image index="0" value="Assets\Textures\wireframe-collection-webby-symbiote.dds"/>
+        </GroupIcon>
+        <StatusBarFlags index="Shields" value="1"/>
+        <StatusBarFlags index="Life" value="1"/>
+        <UnitIcon value="Assets\Textures\btn-unit-collection-webby-symbiote.dds"/>
+    </CActorMissile>
+    <CActorModel id="DefaultExplosionTerranLarge2" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.ExplosionDamage22.Start" Send="Create"/>
+        <Model value="DefaultExplosionTerranSmall"/>
+    </CActorModel>
+    <CActorMissile id="FungalGrowthAttackMissile2" parent="GenericAttackMissile" unitName="WeaponGasCloud">
+        <On index="1" Terms="UnitBirth" Send="AnimBracketStart Lifetime Birth Stand {} 0 2.000000 AsTimeScale"/>
+        <Model value="Marauder"/>
+    </CActorMissile>
+    <CActorUnit id="BiohazardAlphaZombie" parent="GenericUnitBase" unitName="BiohazardAlphaZombie">
+        <Aliases value="_UnitLarge"/>
+        <Macros value="ZergBurrowStandardAnimMacro"/>
+        <Macros value="ZergLargeBurrowEffects"/>
+        <Macros value="TerrainSquibAnimations"/>
+        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="Create"/>
+        <On Terms="UnitBirth.InfestedAbominationBurrowed" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant"/>
+        <On Terms="WeaponStart.InfestedAbomination.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.InfestedAbomination.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="AbilMorph.*.Start; AbilKey BurrowDown" Send="Create BurrowDownAberration"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom InfestedAbomination; MorphTo InfestedAbominationBurrowed" Send="AnimClear Burrow"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimBracketStop Burrow"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination; MorphFrom InfestedAbominationBurrowed" Send="AnimClear Burrow"/>
+        <On Terms="UnitMovementUpdate.*.Walk; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On Terms="UnitHeightUpdate.*.Land" Send="Create Aberration_Land"/>
+        <On Terms="UnitBirth.BiohazardAlphaZombie" Send="TerrainSquibActivateGroup RippleStandard"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbomination" Send="TerrainSquibActivateGroup RippleStandard"/>
+        <On Terms="AbilMorph.*.Finish; MorphTo InfestedAbominationBurrowed" Send="TerrainSquibDeactivate"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveVoidShade" Send="DeathCustomize Shadow"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit HaveTerrazineShadow" Send="DeathCustomize Shadow"/>
+        <On Terms="Abil.AbathurDeepTunnel.SourceCastStart" Send="AnimPlay Burrow Burrow 0 -1.000000 -1.000000 13.000000 AsDuration"/>
+        <On Terms="Abil.AbathurDeepTunnel.SourceChannelStart" Send="AnimClear Burrow"/>
+        <On Terms="Abil.AbathurDeepTunnel.SourceChannelStart" Send="AnimPlay Unburrow Unburrow DontResetOnUnhide -1.000000 -1.000000 13.000000 AsDuration"/>
+        <On Terms="Abil.AbathurDeepTunnel.SourceFinishStart" Send="AnimClear Unburrow"/>
+        <On Terms="AbilMorph.MorphToAbomination.Start; MorphFrom InfestedAbomination" Send="Destroy"/>
+        <On Terms="AbilMorph.MorphToAberration.Finish" Send="AnimBracketStart BSD Birth Stand Death"/>
+        <On Terms="AbilMorph.MorphToAberration.Finish" Send="Create"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Unburrow"/>
+        <On Terms="Abil.BanelingBarrage.SourceChannelStart" Send="AnimBaselineStop"/>
+        <On Terms="Abil.BanelingBarrage.SourceChannelStart" Send="AnimBracketStart Slowcast Stand,Left Stand,Right {} DontResetOnUnhide 1.750000 AsTimeScale"/>
+        <On Terms="Abil.BanelingBarrage.SourceChannelStop" Send="AnimBaselineStart"/>
+        <Model value="Baneling_CollectionSkin_Webby"/>
+        <Scale value="3.400000,3.400000,4.900000"/>
+        <AnimBlendTime value="0.300000"/>
+        <ModelFlags index="OutlineEmitter" value="1"/>
+        <BuildModel value="Baneling_CollectionSkin_Webby"/>
+        <DeathArray index="Normal" ModelLink="InfestedAbominationDeath" SoundLink="Aberration_Death"/>
+        <DeathCustoms ModelLink="ZergLargeUnitDeathLow" Name="AntiGravZerg"/>
+        <DeathCustoms>
+            <ModelLink value="DeathVoidShadowMedium"/>
+            <SoundLink value="ShadowUnit_DeathFX"/>
+            <VoiceLink value="ShadowUnit_DeathVox"/>
+            <Name value="Shadow"/>
+        </DeathCustoms>
+        <PlacementModel value="Baneling_CollectionSkin_Webby"/>
+        <PortraitModel value="AberrationPortrait"/>
+        <TerrainSquibs>
+            <GroupName value="RippleStandard"/>
+            <MovementDistance value="0.150000,0.150000"/>
+            <IdlePeriod value="0.100000,0.250000"/>
+            <RangeUp value="2.000000"/>
+            <RangeDown value="2.000000"/>
+            <AttachQuery Methods="AMFilterCenter"/>
+            <Visuals TerrainPhysicsMaterial="Water" ActorModel="TerrainSquibHarnessContinuous" ModelLink="WaterRippleInfestor"/>
+        </TerrainSquibs>
+        <WalkAnimMoveSpeed value="1.5507"/>
+        <BarOffset value="120"/>
+        <BarWidth value="108"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-collection-webby-baneling.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="Ready" value="UltraliskReady"/>
+        <GroupSoundArray index="Help" value="UltraliskHelp"/>
+        <GroupSoundArray index="What" value="UltraliskWhat"/>
+        <GroupSoundArray index="Yes" value="UltraliskYes"/>
+        <GroupSoundArray index="Attack" value="UltraliskYes"/>
+        <GroupSoundArray index="Pissed" value="UltraliskPissed"/>
+        <HeroIcon value="Assets\Textures\btn-unit-collection-webby-baneling.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-upgrade-zerg-hardenedcarapace.dds"/>
+        <SoundArray index="Ready" value="Aberration_Ready"/>
+        <SoundArray index="Help" value="UltraliskHelp"/>
+        <SoundArray index="What" value="Aberration_What"/>
+        <SoundArray index="Yes" value="Aberration_Yes"/>
+        <SoundArray index="Attack" value="Aberration_Attack"/>
+        <SoundArray index="Pissed" value="UltraliskPissed"/>
+        <StatusColors index="Shields">
+            <ColorArray index="0" value="255,255,255,0"/>
+        </StatusColors>
+        <UnitIcon value="Assets\Textures\btn-unit-collection-webby-baneling.dds"/>
+        <VitalColors index="Shields">
+            <ColorArray value="255,255,255,0"/>
+        </VitalColors>
+        <VitalNames index="Shields" value="Vital/ZergShields"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-Aberration.dds"/>
+        </Wireframe>
+        <WireframeShieldColor value="255,255,255,0"/>
+    </CActorUnit>
+    <CActorUnit id="InhibitorZoneSmall">
+        <On index="0" Send="Create"/>
+        <On index="1" Terms="UnitRevive.InhibitorZoneSmall"/>
+        <On index="2" Send="RefSet ::HostTurretBody _Selectable"/>
+        <On index="3" Terms="UnitConstruction.InhibitorZoneSmall.Start" Send="Create"/>
+        <On index="4" Terms="UnitConstruction.InhibitorZoneSmall.Finish" Send="AnimPlay ConstructionDeath Stand,Birth,Death FullMatch"/>
+        <On index="5" Terms="AnimDone.*.Missing; AnimName ConstructionDeath" Send="Destroy"/>
+        <On index="6" Terms="ActorCreation; ValidateUnit IsFlying; Option Shadow Low; $AllowBlobShadow" Send="Create FlyerShadow"/>
+        <On index="7" Terms="ActorCreation; ValidateUnit IsNotFlying; Option Shadow Low; $AllowBlobShadow" Send="Create GroundShadow"/>
+        <On index="8" Terms="StatusOn.*.PreTargetingModel" Send="Create ModelPretargetGround"/>
+        <On index="9" Terms="StatusOff.*.PreTargetingModel" Target="ModelPretargetGround" Send="Destroy"/>
+        <On index="10" Terms="StatusOn.*.PreTargetingModel; ValidateUnit IsFlying" Target="" Send="Create GroundPreSelection"/>
+        <On index="11" Terms="StatusOff.*.PreTargetingModel" Target="GroundPreSelection" Send="Destroy"/>
+        <On index="12" Terms="StatusIncrement.*.PreTargetingModel; IsStatus PreTargetingModel 2" Target="" Send="StatusSet PreTargetingModel 1"/>
+        <On index="13" Terms="PreTargetingUpdate.*.Start" Send="SetTintColorBlendPair 255,192,192 255,128,128 0.150000 Bounce Pretarget"/>
+        <On index="14" Terms="PreTargetingUpdate.*.Stop" Send="ClearTintColor 0.100000 Pretarget"/>
+        <On index="15" Terms="StatusOn.*.PreTargetingTint" Send="PreTargetingUpdate Start"/>
+        <On index="16" Terms="StatusOff.*.PreTargetingTint" Send="PreTargetingUpdate Stop"/>
+        <On index="17" Terms="StatusIncrement.*.PreTargetingTint; IsStatus PreTargetingTint 2" Send="StatusSet PreTargetingTint 1"/>
+        <On index="18" Terms="CursorUpdate.*.Start; ValidateUnit IsFlying" Send="StatusIncrement FlyerHelper"/>
+        <On index="19" Terms="CursorUpdate.*.Stop; ValidateUnit IsFlying; HasStatus FlyerHelper" Send="StatusDecrement FlyerHelper"/>
+        <On index="20" Terms="ActorCreation; ScopeContains GroundLocalSelection" Send="StatusSet Selected 1"/>
+        <On index="21" Terms="SelectionLocalUpdate.*.Start"/>
+        <On index="22" Terms="SelectionLocalUpdate.*.Stop" Send="StatusSet Selected 0"/>
+        <On index="23" Terms="StatusOn.*.Selected; ValidateUnit IsFlying" Send="StatusIncrement FlyerHelper"/>
+        <On index="24" Terms="StatusOff.*.Selected; ValidateUnit IsFlying; HasStatus FlyerHelper" Send="StatusDecrement FlyerHelper"/>
+        <On index="25" Terms="StatusOn.*.FlyerHelper; FlyerHelper All" Send="Create FlyerHelperSplat"/>
+        <On index="26" Terms="StatusOn.*.FlyerHelper; FlyerHelper Selected"/>
+        <On index="27" Terms="StatusOff.*.FlyerHelper; FlyerHelper Selected" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="28" Terms="ActorCreation; FlyerHelper All; ValidateUnit IsFlying" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="29" Terms="ActorDestruction; FlyerHelper All; !HasStatus FlyerHelper" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="30" Terms="FlyerHelperChange; FlyerHelper None"/>
+        <On index="31" Terms="FlyerHelperChange; FlyerHelper Selected; HasStatus FlyerHelper; !ScopeContains FlyerHelperSplat" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="32" Terms="FlyerHelperChange; FlyerHelper Selected; !HasStatus FlyerHelper" Target="FlyerHelperSplat" Send="Destroy"/>
+        <On index="33" Terms="FlyerHelperChange; FlyerHelper All; ValidateUnit IsFlying; !ScopeContains FlyerHelperSplat" Target="" Send="Create FlyerHelperSplat"/>
+        <On index="34" Terms="UnitBirth.*.Normal" Send="$Birth 0 0.000000"/>
+        <On index="35" Terms="UnitFidget" Send="AnimPlay Fidget Fidget"/>
+        <On index="36" Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Fidget"/>
+        <On index="37" Terms="UnitDetectedByViewer.*.On; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOn"/>
+        <On index="38" Terms="UnitDetectedByViewer.*.Off; ValidateUnit IsHallucination" Send="Signal HallucinationTintOff"/>
+        <On index="39" Terms="UnitDeathCustomize; ValidateUnit NotStructure; IsStatus InAir 1" Target="" Send="DeathCustomize AntiGravGeneric"/>
+        <On index="40" Terms="UnitDeathCustomize; ValidateUnit IsProtossUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="41" Terms="UnitDeathCustomize; ValidateUnit IsTerranUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravTerran"/>
+        <On index="42" Terms="UnitDeathCustomize; ValidateUnit IsZergUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravZerg"/>
+        <On index="43" Terms="UnitDeathCustomize; ValidateUnit IsVortexed" Send="DeathCustomize Vortex"/>
+        <On index="44" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathProtoss" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="45" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathZerg" Send="DeathCustomize AntiGravZerg"/>
+        <On index="46" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathTerran" Send="DeathCustomize AntiGravTerran"/>
+        <On index="47" Terms="Behavior.PhoenixAntiGrav.On" Send="ModelSuddenMotionStart"/>
+        <On index="48" Terms="Behavior.PhoenixAntiGrav.Off" Send="ModelSuddenMotionStop"/>
+        <On index="49" Terms="Behavior.ForceLowDeath.On" Send="DeathCustomsEnablePhysics 0"/>
+        <On index="50" Terms="UnitTaunt.*.Start; Taunt" Send="AnimPlay Cheer Stand,Victory"/>
+        <On index="51" Terms="UnitTaunt.*.Stop; Taunt" Send="AnimClear Cheer"/>
+        <On index="52" Terms="UnitTaunt.*.Start; Taunt Dance" Send="AnimPlay Dance Stand,Dance"/>
+        <On index="53" Terms="UnitTaunt.*.Stop; Taunt Dance" Send="AnimClear Dance"/>
+        <On index="54" Terms="UnitTaunt.*.Start; Taunt Tease" Send="AnimPlay Taunt Taunt"/>
+        <On index="55" Terms="UnitTaunt.*.Stop; Taunt Tease" Send="AnimClear Taunt"/>
+        <On index="56" Terms="ActorCreation" Send="StatusSet InAir 0"/>
+        <On index="57" Terms="UnitHeightUpdate.*.Lift" Send="StatusSet InAir 1"/>
+        <On index="58" Terms="UnitHeightUpdate.*.Land" Send="StatusSet InAir 0"/>
+        <On index="59" Terms="BuildCoachHover.*.On" Send="TimerKill DelayUnhighlight"/>
+        <On index="60" Send="SetTintColor 0,255,0 0.100000"/>
+        <On index="61" Terms="BuildCoachHover.*.Off" Send="TimerSet 0.300000 DelayUnhighlight"/>
+        <On index="62" Terms="TimerExpired; TimerName DelayUnhighlight" Send="SetTintColor 255,255,255 0.500000"/>
+        <On index="63" Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On index="64" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="65" Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On index="66" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="67" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On index="68" removed="1"/>
+        <On index="69" removed="1"/>
+        <SoundArray index="What" value=""/>
+    </CActorUnit>
+    <CActorModel id="InhibitorZoneTemporalFieldImpactModel">
+        <Inherits index="Visibility" value="0"/>
+        <On index="3" removed="1"/>
+        <On index="4" removed="1"/>
+    </CActorModel>
+    <CActorModel id="KaraxEmergencyShieldBuff">
+        <On Terms="Behavior.EmergencyDeathPrevent.On" Send="Create"/>
+        <On Terms="Behavior.EmergencyDeathPrevent.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.EmergencyDeathPrevent.On" Send="SetTintColor 255,255,255"/>
+    </CActorModel>
+    <CActorUnit id="MassiveCocoon">
+        <On Terms="AbilMorph.MorphToXenowraith.Start; MorphFrom Xenoray" Send="Create"/>
+        <On Terms="AbilMorph.MorphToXenowraith.Finish; MorphTo Xenowraith" Send="Create"/>
+        <On Terms="AbilMorph.MorphToXenowraith.Finish; MorphTo Xenowraith" Send="Destroy"/>
+        <On Terms="Behavior.CocoonhasXenoray.On" Send="SetScale 1.666667 0.250000"/>
+        <On Terms="Behavior.CocoonhasXenowraith.On" Send="SetScale 1.833333 0.250000"/>
+    </CActorUnit>
+    <CActorUnit id="MinimapIconAlphaHangar">
+        <MinimapIcon value="Assets\Textures\Kappa-grey-16.dds"/>
+    </CActorUnit>
+    <CActorUnit id="MinimapIconBetaHangar">
+        <MinimapIcon value="Assets\Textures\Sigma-grey-16.dds"/>
+    </CActorUnit>
+    <CActorUnit id="MinimapIconDeltaHangar">
+        <MinimapIcon value="Assets\Textures\Zeta-grey-16.dds"/>
+    </CActorUnit>
+    <CActorDoodad id="PerimeterWall">
+        <EditorCategories value=""/>
+        <Model value="Korhal_PerimeterWall"/>
+    </CActorDoodad>
+    <CActorDoodad id="PerimeterWall2">
+        <EditorCategories value=""/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PerimeterWall"/>
+        <Model value="DestructibleWallStraight"/>
+    </CActorDoodad>
+    <CActorDoodad id="PerimeterWall22">
+        <EditorCategories value=""/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_PerimeterWall"/>
+        <Model value="DestructibleWallCorner90"/>
+    </CActorDoodad>
+    <CActorModel id="PlasmaImpact">
+        <On index="3" Terms="Effect.PlasmaRifleDamage2"/>
+    </CActorModel>
+    <!--                                                                                         -->
+    <!-- Primal Zerg Tough Guy ............................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="PrimalUltralisk">
+        <Scale value="1.000000"/>
+    </CActorUnit>
+    <CActorSimple id="BroodlingStrikeImpactTint">
+        <On Terms="Behavior.Shanked.On" Send="Create"/>
+        <On Terms="Behavior.Shanked.On" Target="_Unit" Send="SetTintColor 255,164,164 0.500000 OneShot SeekerTargetArmor"/>
+        <On Terms="Behavior.Shanked.Off" Target="_Unit" Send="ClearTintColor 0.100000 SeekerTargetArmor"/>
+        <On Terms="Behavior.Shanked.Off" Send="Destroy"/>
+    </CActorSimple>
+    <CActorSimple id="BroodlingImpactTintUnnamed">
+        <Aliases value="_AngryTinter"/>
+        <On Terms="Behavior.BroodlingImpactTintUnnamed.On" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 255,50,50 0.500000 OneShot SeekerTarget"/>
+        <On Terms="Behavior.BroodlingImpactTintUnnamed.Off" Target="_Unit" Send="ClearTintColor 0.500000 SeekerTarget"/>
+        <On Terms="Behavior.BroodlingImpactTintUnnamed.Off" Send="Destroy"/>
+    </CActorSimple>
+    <CActorDoodad id="RaiseCliffLevel2x22">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Aliases value="_EditorHelper"/>
+        <Aliases value="_CreepEngulfable"/>
+        <EditorCategories value="DoodadType:CliffRamps"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="$Stand PlayForever,RandomStartOffset"/>
+        <On Terms="ActorCreation; !IsInEditor" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="TimerKill HighlightStop"/>
+        <Model value="InvisibleWalkablePlatform3x3"/>
+        <Scale value="0.666667"/>
+        <CreepHeightClass value="Huge"/>
+        <EditorFlags index="NoAutoRotate" value="1"/>
+        <Footprint value="RaiseCliffLevel2x22"/>
+        <RandomScaleRange value="1.000000,1.000000"/>
+        <BoostedCliffLevel value="2"/>
+    </CActorDoodad>
+    <CActorDoodad id="RaiseCliffLevel2x222">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Aliases value="_EditorHelper"/>
+        <Aliases value="_CreepEngulfable"/>
+        <EditorCategories value="DoodadType:CliffRamps"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="$Stand PlayForever,RandomStartOffset"/>
+        <On Terms="ActorCreation; !IsInEditor" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="TimerKill HighlightStop"/>
+        <Model value="InvisibleWalkablePlatform3x3"/>
+        <Scale value="1.333330"/>
+        <CreepHeightClass value="Huge"/>
+        <EditorFlags index="NoAutoRotate" value="1"/>
+        <Footprint value="RaiseCliffLevel2x222"/>
+        <RandomScaleRange value="1.000000,1.000000"/>
+        <BoostedCliffLevel value="2"/>
+    </CActorDoodad>
+    <CActorDoodad id="RaiseCliffLevel2x2222">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Aliases value="_EditorHelper"/>
+        <Aliases value="_CreepEngulfable"/>
+        <EditorCategories value="DoodadType:CliffRamps"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="$Stand PlayForever,RandomStartOffset"/>
+        <On Terms="ActorCreation; !IsInEditor" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="TimerKill HighlightStop"/>
+        <Model value="InvisibleWalkablePlatform3x3"/>
+        <Scale value="2.000000"/>
+        <CreepHeightClass value="Huge"/>
+        <EditorFlags index="NoAutoRotate" value="1"/>
+        <Footprint value="RaiseCliffLevel2x2222"/>
+        <RandomScaleRange value="1.000000,1.000000"/>
+        <BoostedCliffLevel value="2"/>
+    </CActorDoodad>
+    <CActorDoodad id="RaiseCliffLevel2x223">
+        <Aliases value="_Doodad"/>
+        <Aliases value="_Selectable"/>
+        <Aliases value="_EditorHelper"/>
+        <Aliases value="_CreepEngulfable"/>
+        <EditorCategories value="DoodadType:CliffRamps"/>
+        <On index="0" Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="Create SoundEmitter Doodad_InvisibleWalkablePlatform4x4"/>
+        <On Terms="ActorCreation" Send="$Stand PlayForever,RandomStartOffset"/>
+        <On Terms="ActorCreation; !IsInEditor" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="AnimClear Work"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="AnimPlay Work Work PlayForever"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorGround" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.StartEditorFlyer" Send="TimerKill HighlightStop"/>
+        <On Terms="SelectionLocalUpdate.*.Stop" Send="TimerKill HighlightStop"/>
+        <Model value="InvisibleWalkablePlatform3x3"/>
+        <Scale value="5.333333"/>
+        <CreepHeightClass value="Huge"/>
+        <EditorFlags index="NoAutoRotate" value="1"/>
+        <Footprint value="RaiseCliffLevel2x223"/>
+        <RandomScaleRange value="1.000000,1.000000"/>
+        <BoostedCliffLevel value="2"/>
+    </CActorDoodad>
+    <!--CActorSimple id="DeathFrenzyTinter">-->
+    <!--        <On Terms="Behavior.HotSAdrenalGlands.On" Send="Create"/>-->
+    <!--        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 255,128,128 0.250000"/>-->
+    <!--        <On Terms="Behavior.HotSAdrenalGlands.Off" Target="_Unit" Send="SetTintColor 255,255,255"/>-->
+    <!--        <On Terms="Behavior.HotSAdrenalGlands.Off" Send="Destroy"/>-->
+    <!--    </CActorSimple-->
+    <CActorModel id="RaptorJumpDustModel">
+        <On Terms="Effect.BroodlingEscortImpactB.Start" Send="Create"/>
+        <On Terms="Effect.BroodlingEscortImpactB.Start" Send="SetScale 2.000000,2.000000,1.000000"/>
+    </CActorModel>
+    <CActorModel id="RuneShieldShieldModel">
+        <On Terms="Behavior.EmergencyDeathPrevent.On" Send="Create"/>
+        <On Terms="Behavior.EmergencyDeathPrevent.Off" Send="Destroy"/>
+    </CActorModel>
+    <CActorRange id="SiegeScope" parent="RangeWeapon" weapon="BroodlingStrike">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.DisableMovement.On" Send="Create"/>
+        <On Terms="Behavior.DisableMovement.Off" Send="Destroy"/>
+        <Weapon value=""/>
+        <Range value="14.000000"/>
+        <Icon value="Assets\Textures\ScannerSweepRadius_Diffuse.dds"/>
+    </CActorRange>
+    <CActorModel id="SquibTransfusion">
+        <On Terms="Effect.ManeuverCreatePersistent.Start" Send="Create"/>
+        <On Terms="Effect.ManeuverCreatePersistent.Start" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce"/>
+        <On Terms="Behavior.GasCloudCasterBuff.Off" Send="Destroy"/>
+    </CActorModel>
+    <CActorUnit id="SubLevelLift">
+        <On index="1" Send="AnimBracketStart Work Cover,Start,00 Cover,Stand,00 Cover,End,00 ContentPlayOnce"/>
+    </CActorUnit>
+    <CActorSound id="TriggeredExplosionSoundTerrLargeLow2" parent="SoundOneShot">
+        <On Terms="Effect.ExplosionDamage22.Start" Send="Create"/>
+        <On Terms="Effect.SelfDestructSearchArea.Start" Send="Create"/>
+        <Host Subject="TriggeredExplosion"/>
+        <Sound value="Terran_ExplosionSmall"/>
+    </CActorSound>
+    <CActorUnit id="UmojanLabZergCageUnit"/>
+    <CActorQuad id="ZagaraVoidCoopBanelingBarrageQuad2" parent="ZergGuideVisualQuadDown" abil="BanelingBarrage">
+        <Height value="10.000000"/>
+        <Width value="0.750000"/>
+    </CActorQuad>
+    <CActorRange id="ZagaraVoidCoopBanelingBarrageRange2" parent="RangeAbil" abil="BanelingBarrage">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+    </CActorRange>
+</Catalog>

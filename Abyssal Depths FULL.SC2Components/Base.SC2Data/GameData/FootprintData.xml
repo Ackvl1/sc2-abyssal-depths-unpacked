@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CFootprint id="Footprint2x2PlacementOnly2">
+        <Layers index="Check" Area="-2,-2,3,3">
+            <Rows value="....."/>
+            <Rows value="....."/>
+            <Rows value="....."/>
+            <Rows value="....."/>
+            <Rows value="....."/>
+        </Layers>
+        <Layers index="Place" Area="-2,-2,3,3">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoBuild" value="0"/>
+                <Positive index="BoostCliff" value="1"/>
+            </Sets>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+            <Rows value="xxxxx"/>
+        </Layers>
+        <Shape>
+            <Radius value="3.5356"/>
+            <Offsets value="-2.5,-2.5;2.5,-2.5;-2.5,2.5;2.5,2.5"/>
+            <Borders value="0,2,1;1,0,1;2,3,1;3,1,1"/>
+        </Shape>
+    </CFootprint>
+    <CFootprint id="Footprint4x4DestructibleRockDiagonal">
+        <Layers index="Place">
+            <Sets index="0">
+                <Positive index="BlockVision" value="1"/>
+            </Sets>
+        </Layers>
+    </CFootprint>
+    <CFootprint id="RaiseCliffLevel2x22">
+        <Layers index="Check">
+            <Rows value=".."/>
+            <Rows value=".."/>
+        </Layers>
+        <Layers index="Place">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoBuild" value="0"/>
+                <Positive index="BoostCliff" value="1"/>
+            </Sets>
+            <Rows value="xx"/>
+            <Rows value="xx"/>
+        </Layers>
+    </CFootprint>
+    <CFootprint id="RaiseCliffLevel2x222">
+        <Layers index="Check" Area="-2,-2,2,2">
+            <Rows value="...."/>
+            <Rows value="...."/>
+            <Rows value="...."/>
+            <Rows value="...."/>
+        </Layers>
+        <Layers index="Place" Area="-2,-2,2,2">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoBuild" value="0"/>
+                <Positive index="BoostCliff" value="1"/>
+            </Sets>
+            <Rows value="xxxx"/>
+            <Rows value="xxxx"/>
+            <Rows value="xxxx"/>
+            <Rows value="xxxx"/>
+        </Layers>
+    </CFootprint>
+    <CFootprint id="RaiseCliffLevel2x2222">
+        <Layers index="Check" Area="-3,-3,3,3">
+            <Rows value="......"/>
+            <Rows value="......"/>
+            <Rows value="......"/>
+            <Rows value="......"/>
+            <Rows value="......"/>
+            <Rows value="......"/>
+        </Layers>
+        <Layers index="Place" Area="-3,-3,3,3">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoBuild" value="0"/>
+                <Positive index="BoostCliff" value="1"/>
+            </Sets>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+            <Rows value="xxxxxx"/>
+        </Layers>
+    </CFootprint>
+    <CFootprint id="RaiseCliffLevel2x223">
+        <Layers index="Check" Area="-8,-8,8,8">
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+            <Rows value="................"/>
+        </Layers>
+        <Layers index="Place" Area="-8,-8,8,8">
+            <Sets index="0">
+                <Positive index="GroundNoSpawn" value="0"/>
+                <Positive index="NoBuild" value="0"/>
+                <Positive index="BoostCliff" value="1"/>
+            </Sets>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+            <Rows value="xxxxxxxxxxxxxxxx"/>
+        </Layers>
+    </CFootprint>
+</Catalog>

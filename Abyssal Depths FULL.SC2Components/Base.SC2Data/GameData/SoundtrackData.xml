@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSoundtrack id="ONIZ_Music_Arctic_1_Intense2">
+        <CueArray>
+            <MasterLayer Sound="ZetsusTheme"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+        <Select value="Shuffle"/>
+    </CSoundtrack>
+    <CSoundtrack id="ONIZ_Music_Arctic_1_Intense22">
+        <CueArray>
+            <MasterLayer Sound="ZetsusTheme2"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+        <Select value="Shuffle"/>
+    </CSoundtrack>
+    <CSoundtrack id="ONIZ_Music_Abyssal_1_Intense">
+        <CueArray>
+            <MasterLayer Sound="ONIZ_Music_Subterranean_01_Intense2"/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+            <SlaveLayers/>
+        </CueArray>
+        <Flags index="Continuous" value="0"/>
+        <Select value="Shuffle"/>
+    </CSoundtrack>
+</Catalog>

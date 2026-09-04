@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectCreatePersistent id="AlphaZombieBurrow67">
+        <EditorCategories value=""/>
+        <DebugTrace value="1"/>
+        <InitialDelay value="0.625"/>
+        <FinalEffect value="AlphaZombieBurrow"/>
+        <PeriodCount value="100"/>
+        <PeriodicValidator value="CasterFacingTargetWithin902"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ApplyRangeIncreaseBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="AttackRangeIncrease"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ApplyRangeIncreaseBehavior222">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="BroodLordOnlyFireWhenAttacking"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ApplyRangeIncreaseBehavior2222">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="BroodLordOnlyFireWhenAttacking"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="BroodLordHangerSet2">
+        <EditorCategories value=""/>
+        <EffectArray value="KillsToCaster"/>
+        <EffectArray value="DamageSelf"/>
+        <EffectArray value="CloakFireApplyBehavior"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="BroodlingDisruptHeal">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="BroodlingEscortUnitSet">
+        <EffectArray value="CloakFireApplyBehavior32"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="CloakFireApplyBehavior">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="CloakFire2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CloakFireApplyBehavior2">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="CloakFire"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="CloakFireApplyBehavior3">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="CloakFire2"/>
+    </CEffectRemoveBehavior>
+    <CEffectCreatePersistent id="CloakFireApplyBehavior32">
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <ValidatorArray value="CasterIsCloaked"/>
+        <FinalEffect value="CloakFireApplyBehavior3"/>
+        <PeriodCount value="20"/>
+        <PeriodicValidator value="TargetWithin10Range2"/>
+        <PeriodicPeriodArray value="0.111"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="BanelingBarrageInitialDelay">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialDelay value="2.8"/>
+        <InitialEffect value="ZagaraVoidCoopBanelingBarrageCP"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="CloakFireApplyBehavior4">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="CloakFire2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EnableEscortBroodlingWeapon2">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="BroodlingDisruptHeal2"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="EscortBroodlingLaunchSet2">
+        <EditorCategories value=""/>
+        <EffectArray value="ApplyRangeIncreaseBehavior"/>
+        <EffectArray value="ApplyRangeIncreaseBehavior22"/>
+        <EffectArray value="ApplyRangeIncreaseBehavior222"/>
+    </CEffectSet>
+    <CEffectDamage id="ExplosionDamage22">
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/SpectreNukeDamage"/>
+        <AINotifyFlags index="HurtFriend" value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AttributeFactor index="Structure" value="39"/>
+        <Death value="Blast"/>
+        <SearchFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectSwitch id="GasCloud52">
+        <EditorCategories value=""/>
+        <CaseArray Effect="CloakFireApplyBehavior2" FallThrough="1"/>
+        <CaseArray Effect="ManeuverCreatePersistent"/>
+    </CEffectSwitch>
+    <CEffectCreatePersistent id="ManeuverCreatePersistent">
+        <EditorCategories value=""/>
+        <PeriodCount value="15"/>
+        <PeriodicEffectArray value="GasCloud4"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <InitialEffect value="DamageSelf"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="ManeuverModifyUnit">
+        <EditorCategories value=""/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy">
+            <Change value="-1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectApplyForce id="PushSelf">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourcePoint"/>
+        <WhichUnit Value="Source"/>
+        <Amount value="1"/>
+        <MassFraction value="0"/>
+    </CEffectApplyForce>
+    <CEffectModifyUnit id="SluggishClawsPenalizeHealth">
+        <EditorCategories value=""/>
+        <VitalArray index="Life">
+            <Change value="-0.6667"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectSet id="EscortBroodlingLaunchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="ApplyRangeIncreaseBehavior"/>
+        <EffectArray value="ApplyRangeIncreaseBehavior22"/>
+        <EffectArray value="ApplyRangeIncreaseBehavior222"/>
+        <EffectArray value="CloakFireApplyBehavior"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ApplyRangeIncreaseBehavior22">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="AttackRangeIncrease2"/>
+    </CEffectApplyBehavior>
+    <CEffectAddTrackedUnit id="AttackPrecursor">
+        <EditorCategories value=""/>
+    </CEffectAddTrackedUnit>
+    <CEffectSet id="AttackSet">
+        <EditorCategories value=""/>
+        <EffectArray value="KillCaster"/>
+        <EffectArray value="EnableEscortBroodlingWeapon"/>
+    </CEffectSet>
+    <CEffectRemoveTrackedUnit id="AttackSet2">
+        <EditorCategories value=""/>
+        <BehaviorLink value="TrackedEscort"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectRemoveTrackedUnit>
+    <CEffectAddTrackedUnit id="BroodLordAddUnit">
+        <EditorCategories value=""/>
+        <BehaviorLink value="TrackedEscort"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectAddTrackedUnit>
+    <CEffectModifyUnit id="BroodLordBroodlingCopyVitals">
+        <EditorCategories value=""/>
+        <LaunchUnit Value="Target"/>
+        <ImpactUnit Value="Source"/>
+        <ModifyFlags index="Copy" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="BroodLordHangerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="KillsToCaster"/>
+        <EffectArray value="DamageSelf"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="BroodlingAttackRandom">
+        <EditorCategories value=""/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="BroodlingAttackRandom2">
+        <EditorCategories value=""/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <SearchFilters value="Ground,Visible;Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="BroodlingEscort"/>
+        <MinCount value="1"/>
+        <LaunchLocation Value="TargetUnitOrPoint"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="BroodlingAttackSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Effect="ApplyRangeIncreaseBehavior2222" FallThrough="1"/>
+        <CaseArray Effect="BroodlingAttackRandom2"/>
+        <CaseArray/>
+        <CaseDefault value="BroodlingEscort"/>
+    </CEffectSwitch>
+    <CEffectDamage id="BroodlingEscortDamage">
+        <Amount value="5"/>
+    </CEffectDamage>
+    <!--Use (Broodling Escort Launch A)'s Impact Effect with this effect to deal damage to units after landing-->
+    <CEffectEnumArea id="BroodlingEscortDamageSearch">
+        <EditorCategories value=""/>
+        <DebugTrace value="1"/>
+        <SearchFilters value="Visible;Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSDistanceToTarget"/>
+        </TargetSorts>
+        <AreaArray Radius="0.75" Effect="BroodlingEscortDamageUnit2"/>
+        <MinCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="BroodlingEscortDamageUnit">
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectSet id="BroodlingEscortDamageUnit2">
+        <ValidatorArray value="BroodlingEscortFilters"/>
+        <EditorCategories value="Race:Zerg"/>
+        <EffectArray value="BroodlingEscortDamageUnit"/>
+        <EffectArray value="BroodlingEscortDamageApplyBehavior"/>
+        <EffectArray value="SluggishClawsApplyBehavior"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="BroodlingEscortDamageApplyBehavior">
+        <ValidatorArray index="0" value="TargetIsHumanPlayer"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Behavior value="BroodlingStrikeImpactTint"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="BroodlingEscortHide">
+        <EditorCategories value=""/>
+        <ModifyFlags index="Hide" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="BroodlingEscortHide2">
+        <EditorCategories value=""/>
+        <ImpactUnit Value="Source"/>
+        <ModifyFlags index="Remove" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="BroodlingEscortLaunch">
+        <EffectArray index="3" value="BroodlingTimedLife2"/>
+        <EffectArray value="BroodLordBroodlingCopyVitals"/>
+        <EffectArray value="CloakFireApplyBehavior32"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="BroodlingEscortLaunchA">
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value=""/>
+        <DeathType value="Unknown"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="BroodlingEscortLaunchB">
+        <EffectArray index="2" value="BroodlingTimedLife2"/>
+        <EffectArray index="4" value="BroodLordBroodlingCopyVitals"/>
+        <EffectArray index="5" value="BroodlingEscortHide2"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="BroodlingEscortMissile">
+        <ImpactEffect value=""/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="BroodlingEscortMissileB">
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ValidatorArray index="0" value="CasterNotDead"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="BroodlingTimedLife2">
+        <ValidatorArray index="0" value="BroodlingTimedLifeTargetFilters"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Behavior value="BroodlingFate2"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="DamageSelf">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <Kind value="Ranged"/>
+        <Amount value="0.1"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="Descend">
+        <EditorCategories value=""/>
+        <Height value="-1.5"/>
+        <HeightTime value="2.8"/>
+    </CEffectModifyUnit>
+    <CEffectApplyBehavior id="EnableEscortBroodlingWeapon">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="CanAttack"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="GasCloud">
+        <EditorCategories value=""/>
+        <InitialEffect value="GasCloud2"/>
+        <PeriodCount value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="GasCloud2">
+        <EditorCategories value=""/>
+        <SpawnEffect value="GasCloud3"/>
+        <SpawnUnit value="WeaponGasCloud"/>
+        <SpawnRange value="2"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="GasCloud5">
+        <EditorCategories value=""/>
+        <EffectArray value="ManeuverCreatePersistent"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GasCloud3">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="GasCloudTemporary"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="GasCloud4">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="GasCloudCasterBuff"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="GasCloud6">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <ImpactOffset value="-1,0,0"/>
+        <Movers Link="GasCloud"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="HercGrappleLaunchCasterImpactSet">
+        <EffectArray value="HercGrappleResetHeight"/>
+        <!--EffectArray value="GrappleKnockbackSearch"/-->
+        <!--EffectArray value="GrappleStunSearch"/-->
+    </CEffectSet>
+    <CEffectModifyUnit id="HercGrappleResetHeight">
+        <EditorCategories value=""/>
+        <ImpactUnit Value="Caster"/>
+        <Height value="-6.5"/>
+        <HeightTime value="1"/>
+    </CEffectModifyUnit>
+    <CEffectLaunchMissile id="HighTemplarWeaponLM">
+        <ImpactEffect value="PlasmaRifleDamage2"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="InhibitorZoneSmallSearch">
+        <AreaArray index="0" Radius="5"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="NeedleClaws3" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="5"/>
+        <AttributeFactor index="Mechanical" value="0.5"/>
+    </CEffectDamage>
+    <CEffectEnumMagazine id="BroodLordDispatch1">
+        <EditorCategories value=""/>
+        <DebugTrace value="1"/>
+        <WhichUnit Effect="KillRemove" Value="Caster"/>
+        <EffectInternal value="TimedLifeFate"/>
+        <EffectExternal value="TimedLifeFate"/>
+    </CEffectEnumMagazine>
+    <CEffectApplyBehavior id="BroodlingImpactApplyBehaviorUnnamed">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Effect="RavenShredderMissileLaunchMissile"/>
+        <Behavior value="BroodlingImpactTintUnnamed"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="NeedleClaws32">
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
+            <Change value="2"/>
+        </VitalArray>
+    </CEffectModifyUnit>
+    <CEffectDamage id="PlasmaRifleDamage2" parent="DU_WEAP">
+        <EditorCategories value="Race:Protoss"/>
+        <Kind value="Ranged"/>
+        <Amount value="72"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="SiegeApplyScopeStack">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="Scope2"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="SiegeCreatePersistent">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialDelay value="0.125"/>
+        <InitialEffect value="SiegeApplyScopeStack"/>
+        <PeriodCount value="75"/>
+        <PeriodicEffectArray value="SiegeApplyScopeStack"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="SiegeCreatePersistent2">
+        <EditorCategories value=""/>
+        <ImpactUnit Value="Caster"/>
+        <Height value="1.5"/>
+        <HeightTime value="4.2"/>
+    </CEffectModifyUnit>
+    <CEffectCreatePersistent id="SiegeCreatePersistent3">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialDelay value="4.2"/>
+        <InitialEffect value="SiegeEnableAttack"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="SiegeCreatePersistent32">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <InitialDelay value="2.8"/>
+        <InitialEffect value="SiegeEnableAttack2"/>
+        <FinalEffect value="SiegeEnableAttack"/>
+    </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="SiegeEnableAttack">
+        <EditorCategories value=""/>
+        <BehaviorLink value="DisableMovement2"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="SiegeEnableAttack2">
+        <ValidatorArray index="0" value="SiegeEnableAttackTargetFilters"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="DisableMovement"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="SiegeSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SiegeCreatePersistent2"/>
+        <EffectArray value="SiegeSet2"/>
+        <EffectArray value="SiegeSet22"/>
+        <EffectArray value="SiegeCreatePersistent3"/>
+        <SetSource value="1"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SiegeSet2">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="DisableMovement"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SiegeSet22">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="DisableMovement2"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SluggishClawsApplyBehavior">
+        <EditorCategories value=""/>
+        <Behavior value="Shanked"/>
+        <ValidatorArray index="0" removed="1"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SluggishClawsSet">
+        <EditorCategories value=""/>
+        <EffectArray value="NeedleClaws3"/>
+        <EffectArray value="NeedleClaws32"/>
+        <EffectArray value="SluggishClawsApplyBehavior"/>
+        <EffectArray value="BroodlingDisruptHeal"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="StopFakeMove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="move"/>
+        <Target Value="CasterPoint"/>
+    </CEffectIssueOrder>
+    <CEffectEnumTrackedUnits id="TargetSingleBroodlingEscort">
+        <EditorCategories value=""/>
+        <BehaviorLink value="TrackedEscort"/>
+        <TrackerUnit Value="Source"/>
+        <Effect value="AttackSet"/>
+    </CEffectEnumTrackedUnits>
+    <CEffectCreatePersistent id="PushSelfCreatePersistent">
+        <EditorCategories value=""/>
+        <InitialEffect value="PushSelf"/>
+        <InitialOffset value="0,1,0"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="UnsiegeSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SiegeSet2"/>
+        <EffectArray value="SiegeSet22"/>
+        <EffectArray value="Descend"/>
+        <EffectArray value="SiegeCreatePersistent32"/>
+        <SetSource value="1"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="ZagaraVoidCoopBanelingBarrageCP2">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="CasterUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicEffectArray value="ZagaraVoidCoopBanelingBarrageLM"/>
+        <PeriodicPeriodArray value="0.25"/>
+    </CEffectCreatePersistent>
+</Catalog>

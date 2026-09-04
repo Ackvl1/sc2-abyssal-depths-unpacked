@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilEffectTarget id="AbathurDeepTunnel4">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <PrepEffect value="AlphaZombieBurrow"/>
+        <Effect index="0" value="AbathurDeepTunnelTeleportSet"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Charge Link="Abil/DeepTunnel"/>
+            <Cooldown Link="Abil/DeepTunnel" Location="Unit" TimeUse="120"/>
+        </Cost>
+        <Range value="500"/>
+        <PrepTime value="0.0625"/>
+        <CastIntroTime value="10"/>
+        <CastOutroTime value="10"/>
+        <FinishTime value="0"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <CancelableArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <AINotifyEffect value="AbathurDeepTunnelCU"/>
+        <ProgressButtonArray index="Prep" value="AbathurDeepTunnel"/>
+        <ProgressButtonArray index="Cast" value="AbathurDeepTunnel"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AshWormBurrowMove" State="Restricted">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilArmMagazine id="BroodLordHangar">
+        <InfoArray index="Ammo1" Time="0.6" CountStart="0" Distance="0.75">
+            <Vital index="Energy" value="15"/>
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="QueenStukovSpawnBroodlings" Requirements="ArmBroodlingEscortHighEnergy"/>
+        </InfoArray>
+        <EffectArray index="Create" value="EscortBroodlingLaunchSet2"/>
+        <EffectArray index="Launch" value="BroodLordAddUnit"/>
+        <EffectArray index="Release" value="BroodLordHangerSet"/>
+        <ExternalAngle index="0" value="229.9987"/>
+        <ExternalAngle index="1" value="129.9902"/>
+        <ExternalAngle value="180"/>
+    </CAbilArmMagazine>
+    <CAbilArmMagazine id="BroodLordHangar22">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <DataCollection value="BroodLordHangar"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="Retarget" value="1"/>
+        <Leash value="12"/>
+        <InfoArray index="Ammo1" Time="1.25" Distance="1.15" Manage="Recall" Unit="BroodlingEscort">
+            <Vital index="Energy" value="2.5"/>
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="QueenStukovSpawnBroodlings" Requirements="ArmBroodlingEscortHighEnergy22"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <InfoArray index="Ammo2" Time="0.15" Distance="1.15" Manage="Recall" Unit="BroodlingEscort">
+            <Vital index="Energy" value="2.5"/>
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="QueenStukovSpawnBroodlings" Requirements="ArmBroodlingEscortHighEnergy3"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <Alert value=""/>
+        <EffectArray index="Create" value="EscortBroodlingLaunchSet"/>
+        <EffectArray index="Death" value="InterceptorFate"/>
+        <EffectArray index="Launch" value="BroodLordAddUnit"/>
+        <EffectArray index="Release" value="BroodLordHangerSet"/>
+        <ExternalAngle value="219.9902"/>
+        <ExternalAngle value="259.9914"/>
+        <ExternalAngle value="139.9987"/>
+        <ExternalAngle value="99.9975"/>
+        <ExternalAngle value="180"/>
+    </CAbilArmMagazine>
+    <CAbilArmMagazine id="BroodLordHangar2" parent="BroodLordHangar22">
+        <Name value="Abil/Name/BroodLordHangar2"/>
+        <InfoArray index="Ammo1" Time="0.3">
+            <Vital index="Energy" value="10"/>
+            <Button Requirements="ArmBroodlingEscortHighEnergy5"/>
+        </InfoArray>
+        <InfoArray index="Ammo2" Time="0" Distance="0" Manage="Destroy" Unit="">
+            <Vital index="Energy" value="0"/>
+            <Charge Link=""/>
+            <Cooldown Link=""/>
+            <Button DefaultButtonFace="" Requirements=""/>
+            <Flags index="AutoBuild" value="0"/>
+            <Flags index="AutoBuildOn" value="0"/>
+            <Flags index="External" value="0"/>
+        </InfoArray>
+    </CAbilArmMagazine>
+    <CAbilArmMagazine id="BroodLordHangar3">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="Retarget" value="1"/>
+        <Leash value="12"/>
+        <InfoArray index="Ammo1" Time="0.6" Distance="0.75" Manage="Recall" Unit="BroodlingEscort">
+            <Vital index="Energy" value="15"/>
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="QueenStukovSpawnBroodlings" Requirements="ArmBroodlingEscortHighEnergy"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <Alert value=""/>
+        <EffectArray index="Create" value="EscortBroodlingLaunchSet"/>
+        <EffectArray index="Death" value="InterceptorFate"/>
+        <EffectArray index="Launch" value="BroodLordAddUnit"/>
+        <EffectArray index="Release" value="BroodLordHangerSet"/>
+        <ExternalAngle value="229.9987"/>
+        <ExternalAngle value="129.9902"/>
+        <ExternalAngle value="180"/>
+    </CAbilArmMagazine>
+    <CAbilQueue id="BroodLordQueue2">
+        <QueueSize value="1"/>
+    </CAbilQueue>
+    <CAbilEffectInstant id="BroodLordSiege">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BroodLordSiege2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SiegeSet"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Siege" Requirements="Sieging2"/>
+        <CmdButtonArray index="Cancel">
+            <Flags index="ShowInGlossary" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BroodLordSiege22">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="BroodLordSiege2"/>
+        <Effect index="0" value="UnsiegeSet"/>
+        <AINotifyEffect value="BroodLordSiege2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Siege2" Requirements="Sieging"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CloakFire">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GasCloud52"/>
+        <Cost>
+            <Vital index="Energy" value="35"/>
+            <Charge>
+                <CountMax value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Utility"/>
+                <Location value="Unit"/>
+                <TimeUse value="110"/>
+            </Charge>
+            <Cooldown Link="Abil/Utility" Location="Unit" TimeUse="4.5"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CloakFire"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GasCloud">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GasCloud5"/>
+        <Flags index="ChannelingMinimum" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="35"/>
+            <Charge>
+                <CountMax value="2"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Utility"/>
+                <Location value="Unit"/>
+                <TimeUse value="110"/>
+            </Charge>
+            <Cooldown Link="Abil/Utility" Location="Unit" TimeUse="4.5"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NoxiousCloud2"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="HealingDroneHeal">
+        <AutoCastFilters value="-;Neutral,Enemy,Missile,Stasis,Dead,Invulnerable,Summoned"/>
+    </CAbilEffectTarget>
+    <CAbilResearch id="HiveMind">
+        <InfoArray index="Research10">
+            <Button Requirements="BuildVirophageAlpha"/>
+        </InfoArray>
+        <InfoArray index="Research11">
+            <Button Requirements="BuildVirophageBeta"/>
+        </InfoArray>
+        <InfoArray index="Research12">
+            <Button Requirements="BuildVirophageDelta"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilMorph id="MantaRaySiegeMorphtoMantaRay">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="OverseerSiegeMorphtoOverseer"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MantaRaySiege2">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <RefundFraction>
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+            <Resource index="Terrazine" value="0"/>
+            <Resource index="Custom" value="0"/>
+        </RefundFraction>
+        <InfoArray Score="1" Unit="Xenoray">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilTrain id="MassiveCocoonTrain">
+        <InfoArray index="Train7" Time="90">
+            <Button DefaultButtonFace="SpawnOverseer2">
+                <Flags index="UseDefaultButton" value="1"/>
+            </Button>
+            <Unit value="Xenoray"/>
+            <Flags index="InheritRally" value="1"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilMorph id="MorphToXenowraith">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <DataCollection value="MorphToAbomination"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MorphtoAbomination2" Requirements="MorphAlphaZombie"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <ActorKey value="MorphToLurker"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="Interruptible" value="1"/>
+        <Flags index="IgnoreFood" value="1"/>
+        <Flags index="Rally" value="1"/>
+        <Flags index="RallyReset" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <RefundFraction>
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+            <Resource index="Terrazine" value="0"/>
+            <Resource index="Custom" value="0"/>
+        </RefundFraction>
+        <InfoArray Unit="MassiveCocoon"/>
+        <InfoArray Score="1" Unit="Xenowraith">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="90"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Delay" value="90"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Delay" value="90"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="90"/>
+                <EffectArray index="Finish" value="PostMorphHeal"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="MorphComplete_Zerg"/>
+    </CAbilMorph>
+    <CAbilMorph id="MorphToMantaRaySiege">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="OverseerMorphtoOverseerSiege"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MantaRaySiege">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <ActorKey value="MantaRayMorphtoMantaRaySiege"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="WaitUntilStopped" value="0"/>
+        <RefundFraction>
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="0"/>
+            <Resource index="Terrazine" value="0"/>
+            <Resource index="Custom" value="0"/>
+        </RefundFraction>
+        <InfoArray Score="1" Unit="BroodLord22">
+            <SectionArray index="Abils">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="0.75"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Duration" value="0.5"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilEffectTarget id="SpawnXenoray">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TargetPointDummy"/>
+        <Cost>
+            <Resource index="Vespene" value="80"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SpawnOverseer2">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="SpinAttack">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SuicideMonstrosity2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TargetSingleBroodlingEscort"/>
+        <Flags index="Transient" value="1"/>
+        <AINotifyEffect value="Suicide"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SuicideMonstrosity"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="SuperHeal">
+        <AutoCastFilters value="Visible;Ally,Enemy,Summoned"/>
+    </CAbilEffectTarget>
+    <CAbilTrain id="TrainBroodling">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="CopyLifePercentage" value="1"/>
+        <InfoArray index="Train1">
+            <Button Requirements="CommanderPrestigeArtanisOrbitalStrikes"/>
+            <Unit value="Broodling"/>
+            <Flags index="InheritRally" value="1"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilEffectInstant id="StopFakeMove">
+        <OrderArray index="0" DisplayType="Move" Model="Assets\UI\Cursors\WayPointMove_Void\WayPointMove_Void.m3"/>
+        <OrderArray>
+            <DisplayType value="Move"/>
+            <Color value="255,35,125,255"/>
+            <Model value="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
+            <LineTexture value="Assets\Textures\WayPointLine.dds"/>
+        </OrderArray>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Stop" Requirements="Sieging"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="BanelingBarrage">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="BanelingBarrageInitialDelay"/>
+        <Flags index="RangeUseCasterRadius" value="0"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Charge Location="Unit"/>
+            <Cooldown Link="ZagaraVoidCoopBanelingBarrageZagaraVoidCoopBanelingBarrage2ZagaraVoidCoopBanelingBarrageBanelingBarrage" Location="Unit" TimeUse="10"/>
+        </Cost>
+        <Range value="10"/>
+        <Arc value="4.9987"/>
+        <PrepTime value="0"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <CursorRangeMode value="ForceToMax"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ZagaraVoidCoopBanelingBarrage" State="Restricted"/>
+    </CAbilEffectTarget>
+</Catalog>

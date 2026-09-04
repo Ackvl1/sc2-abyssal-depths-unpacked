@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=Der interplanetare Oberflächenscanner hat große Ressourcenvorkommen auf Planet 37 / Datenset C gefunden. Der Haken: Sie befinden sich am Grund eines Ozeans.<n/><n/>Eingereicht zum Kartenwettbewerb von TeamLiquid, präsentiert von Shopify<n/>Entwickelt von KillerSmile
+DocInfo/DescShort=1vs1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- Die HDR-Einstellung der Spalten wurde auf 1,0 verringert.
+DocInfo/PatchNote003=- Die Klippen in der Mitte der Karte wurden angepasst.
+DocInfo/PatchNote004=- Die Rächerklippen wurden überarbeitet: Die Form wurde beibehalten, bietet aber keinen Platz mehr für Belagerungspanzer im Belagerungsmodus.
+MapInfo/Player00/Name=Neutral
+MapInfo/Player01/Name=Spieler 1
+MapInfo/Player02/Name=Spieler 2
+MapInfo/Player03/Name=Feindlich

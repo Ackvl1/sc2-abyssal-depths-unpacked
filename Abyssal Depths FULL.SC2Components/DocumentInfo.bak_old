@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <ModType>
+        <Value>Interface</Value>
+    </ModType>
+    <Icon>
+        <Value>ui_mapinfo_abyssalreef.dds</Value>
+    </Icon>
+    <Dependencies>
+        <Value>bnet:Oh No It's Zombies Semice Mod/0.14/457023,file:Oh No It's Zombies Semice Mod.SC2Components</Value>
+        <Value>bnet:Oh No It's Zombies Semice Art Mod/0.5/457041,file:Oh No It's Zombies Semice Art Mod.SC2Components</Value>
+    </Dependencies>
+    <Screenshot>
+        <File>
+            <Value>ui_screenshot_abyssalreef_1.tga</Value>
+        </File>
+        <CaptionId>
+            <Value>1</Value>
+        </CaptionId>
+        <Flags>
+            <Value> </Value>
+        </Flags>
+    </Screenshot>
+    <PatchNote>
+        <Version>
+            <Value>1.5</Value>
+            <Value>1.6</Value>
+            <Value>1.7</Value>
+        </Version>
+        <Date>
+            <Value>5/27/2022</Value>
+            <Value>6/21/2022</Value>
+            <Value>6/23/2022</Value>
+        </Date>
+        <Notes>
+            <Value>1</Value>
+            <Value>2,3</Value>
+            <Value>4</Value>
+        </Notes>
+    </PatchNote>
+    <Preload>
+        <Value>Bank;onizstats</Value>
+    </Preload>
+</DocInfo>

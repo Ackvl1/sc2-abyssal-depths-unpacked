@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=El escáner de superficie interplanetario ha encontrado grandes cantidades de recursos en el planeta 37/ datos C. La trampa: está en el fondo de un océano.<n/><n/>Enviado al concurso de mapas de TL, patrocinado por Shopify<n/>Creado por: KillerSmile
+DocInfo/DescShort=1 vs.1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- Se han reducido las grietas RDA a 1.0
+DocInfo/PatchNote003=- Se han realizado ajustes en los riscos en mitad del mapa
+DocInfo/PatchNote004=- Actualización de riscos de Yum-Kimil: se ha conservado la forma original, pero ya no hay lugar para un tanque en Modo asedio
+MapInfo/Player00/Name=Neutral
+MapInfo/Player01/Name=Jugador 1
+MapInfo/Player02/Name=Jugador 2
+MapInfo/Player03/Name=Hostil

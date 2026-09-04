@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=Międzyplanetarny skaner powierzchni znalazł ogromne ilości zasobów na planecie 37/ zestaw danych C. Jedyny problem: znajdują się one na dnie oceanu.<n/><n/>Mapa z konkursu TLMC powered by Shopify<n/>Autor: KillerSmile
+DocInfo/DescShort=1 na 1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- Zmniejszono poziom ustawień HDR dla szczelin do 1,0.
+DocInfo/PatchNote003=- Dostosowano klify na środku mapy.
+DocInfo/PatchNote004=- Zaktualizowano klify żniwiarzy - zachowano oryginalny kształt, ale nie można już rozstawiać na nich czołgów w trybie oblężniczym.
+MapInfo/Player00/Name=Neutralny
+MapInfo/Player01/Name=Gracz 1
+MapInfo/Player02/Name=Gracz 2
+MapInfo/Player03/Name=Wróg

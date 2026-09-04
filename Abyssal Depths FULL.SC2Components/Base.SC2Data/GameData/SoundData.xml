@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="Aberration_Death2" parent="Death">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Drugged_Vx_03.wav"/>
+            <Pitch value="7.000000,7.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Passing_Vx_07.wav"/>
+            <Pitch value="5.000000,5.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Passing_Vx_06.wav"/>
+            <Pitch value="7.000000,7.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="Aberration_What2" parent="HoS_ZergAck">
+        <AssetArray index="0">
+            <File value="Assets\Sounds\Whale_Exert_Vx_01.wav"/>
+            <Pitch value="-4.000000,-4.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialAnim value=""/>
+            <FacialGroup value=""/>
+            <FacialFile value=""/>
+            <Speaker value=""/>
+            <Subtitle value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Free_Vx_Exert_01.wav"/>
+            <Pitch value="-5.000000,-5.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Free_Vx_02.wav"/>
+            <Pitch value="-2.000000,-2.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Free_Vx_03.wav"/>
+            <Pitch value="-3.000000,-3.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Free_Vx_Exert_05.wav"/>
+            <Pitch value="-4.000000,-4.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Whale_Exert_Vx_04.wav"/>
+            <Pitch value="-2.000000,-2.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Flags index="VariationFallback" value="0"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="Aberration_Yes2" parent="HoS_ZergAck">
+        <AssetArray index="0">
+            <File value="Assets\Sounds\Whale_Distress_Vx_01.wav"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialAnim value=""/>
+            <FacialGroup value=""/>
+            <FacialFile value=""/>
+            <Speaker value=""/>
+            <Subtitle value=""/>
+            <SyncPoints value="171549"/>
+            <SyncPoints value="171549"/>
+        </AssetArray>
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_02.wav" Volume="2.000000,2.000000" FacialGroup="">
+            <SyncPoints value="171549"/>
+            <SyncPoints value="171549"/>
+        </AssetArray>
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_04.wav" Volume="2.000000,2.000000" FacialGroup="">
+            <SyncPoints value="171549"/>
+            <SyncPoints value="171549"/>
+        </AssetArray>
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_03.wav" Volume="1.800000,2.000000" FacialGroup="">
+            <SyncPoints value="171549"/>
+            <SyncPoints value="171549"/>
+        </AssetArray>
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_05.wav" Volume="2.000000,2.000000" FacialGroup="">
+            <SyncPoints value="171549"/>
+            <SyncPoints value="171549"/>
+        </AssetArray>
+        <Flags index="VariationFallback" value="0"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="ONIZ_Music_Subterranean_01_Intense2" parent="MUSIC">
+        <AssetArray File="Assets\Sounds\Naruto_Emergence_of_Talents.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Naruto_The_Screaming_God.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Naruto_Zetsu_s_Theme.ogg" Volume="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Naruto_Sunspot.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Naruto_Night_Attack.ogg" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Naruto_Evil_Sauske_Theme.ogg" Volume="6.000000,6.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Naruto_Hidden_Will_To_Fight.ogg" Volume="1.000000,1.000000" FacialGroup=""/>
+        <SpeakerMix index="Center" value="0.000000"/>
+        <SpeakerMix index="BackLeft" value="0.500000"/>
+        <SpeakerMix index="BackRight" value="0.500000"/>
+        <SpeakerMix index="SideLeft" value="0.000000"/>
+        <SpeakerMix index="SideRight" value="0.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="Victory">
+        <AssetArray index="0" File="Assets\Sounds\1-02. &apos;&apos;METAL GEAR SOLID&apos;&apos; Victory Theme no intro.ogg"/>
+    </CSound>
+    <CSound id="Whale_VxFx_Distress2" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_05.wav" FacialGroup=""/>
+        <DupeMuteCount value="4"/>
+        <Pitch value="-2.000000,0.000000"/>
+        <Spread value="90.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="Whale_VxFx_Distress22" parent="Ambience_Object">
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Whale_Distress_Vx_05.wav" FacialGroup=""/>
+        <Flags index="Download" value="1"/>
+        <Flags index="Ignorable" value="1"/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Other"/>
+        <DupeDestroyCount value="16"/>
+        <PanLevel value="0.750000"/>
+        <ResourcePriority value="32"/>
+        <Spread value="130.000000"/>
+        <SustainFade index="1" Time="250" Volume="-96.000000"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="ZetsusTheme">
+        <AssetArray File="Assets\Sounds\Naruto_Zetsu&apos;s_Theme.ogg" FacialGroup=""/>
+        <Flags index="Download" value="0"/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+        <SpeakerMix index="Center" value="0.250000"/>
+        <SpeakerMix index="BackLeft" value="0.600000"/>
+        <SpeakerMix index="BackRight" value="0.600000"/>
+        <SpeakerMix index="SideLeft" value="0.125000"/>
+        <SpeakerMix index="SideRight" value="0.125000"/>
+        <SustainFade index="1" Time="2000" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="ZetsusTheme2">
+        <AssetArray File="Assets\Sounds\Naruto_The_Scarlet_Letter.ogg" FacialGroup=""/>
+        <Flags index="Download" value="0"/>
+        <Flags index="Stream" value="1"/>
+        <Category value="Music"/>
+        <SpeakerMix index="Center" value="0.250000"/>
+        <SpeakerMix index="BackLeft" value="0.600000"/>
+        <SpeakerMix index="BackRight" value="0.600000"/>
+        <SpeakerMix index="SideLeft" value="0.125000"/>
+        <SpeakerMix index="SideRight" value="0.125000"/>
+        <SustainFade index="1" Time="2000" Volume="-96.000000"/>
+    </CSound>
+</Catalog>

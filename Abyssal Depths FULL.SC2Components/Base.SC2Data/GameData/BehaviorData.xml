@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="AlphaZombieBurrowing">
+        <Modification>
+            <AbilLinkDisableArray value="BroodLordHangar"/>
+            <AbilLinkDisableArray value="BroodLordHangar2"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AlphaZombieTurningtoBurrow">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterFacingTargetWithin902"/>
+        <Duration value="10"/>
+        <FinalEffect value="AlphaZombieBurrow"/>
+        <Modification>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilLinkDisableArray value="BroodLordHangar"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AttackRangeIncrease">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="IsSieging2"/>
+        <DisableValidatorArray value="IsSieging22"/>
+        <Modification Height="1.5" WeaponRange="6.5" WeaponScanBonus="6.5">
+            <HeightTime index="Start" value="4.2"/>
+            <HeightTime index="Stop" value="2.8"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AttackRangeIncrease2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="IsSieging2"/>
+        <DisableValidatorArray value="IsSieging222"/>
+        <Modification Height="1.5">
+            <HeightTime index="Start" value="2.8"/>
+            <HeightTime index="Stop" value="1.4"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BroodLordOnlyFireWhenAttacking">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterNotAttacking"/>
+        <DisableValidatorArray value="CasterNotHoldingPosition"/>
+        <Modification WeaponRange="-20" WeaponScanBonus="-20"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BroodlingDisruptHeal">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="MedicTargetNotBeingHealed2"/>
+        <Duration value="1.25"/>
+        <Period value="0.111"/>
+        <PeriodicEffect value="SluggishClawsPenalizeHealth"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BroodlingDisruptHeal2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="30"/>
+        <Modification MoveSpeedBonus="0.0507"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BroodlingFate2" parent="TimedLife">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-explode.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="28"/>
+        <KillCredit Value="Unknown"/>
+        <Period value="1.4"/>
+        <PeriodicEffect value="EnableEscortBroodlingWeapon2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CanAttack">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="BroodlingEscort"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CloakFire">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4.65"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CloakFire2">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CocoonhasXenowraith">
+        <Cost>
+            <Charge Link="Behavior/CocoonhasBlightbringer"/>
+            <Cooldown Link="Behavior/CocoonhasBlightbringer"/>
+        </Cost>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <BehaviorFlags index="EnabledWhileDead" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification RadiusMultiplier="1.2" KillXPBonus="180">
+            <VitalMaxArray index="Life" value="500"/>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/CocoonhasBlightbringer"/>
+                <Cooldown Link="Behavior/CocoonhasBlightbringer"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CocoonhasXenoray">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <BehaviorFlags index="EnabledWhileDead" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DisableMovement">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <SightBonus value="2"/>
+            <MoveSpeedMaximum value="0.0117"/>
+            <AccelerationMultiplier value="0.01"/>
+            <WeaponRange value="7"/>
+            <WeaponMinRange value="4"/>
+            <WeaponScanBonus value="7"/>
+            <AbilClassDisableArray index="CAbilStop" value="1"/>
+            <AbilLinkDisableArray value="AbathurDeepTunnel4"/>
+            <AbilLinkDisableArray value="MorphToXenowraith"/>
+            <AbilLinkDisableArray value="GasCloud"/>
+            <AbilLinkDisableArray value="BroodLordSiege2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DisableMovement2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DisableMovement3">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMaximum="0.0117" AccelerationMultiplier="0.01"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DisableMovement32">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EmergencyDeathPrevent">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="TargetLifeLTE10"/>
+        <Modification ShieldArmorBonus="3">
+            <VitalMaxArray index="Shields" value="5000"/>
+            <VitalRegenArray index="Shields" value="500"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Flee">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GasCloudTemporary">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="4"/>
+        <PeriodCount value="1"/>
+        <FinalEffect value="TimedLifeFate"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GasCloudCasterBuff">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.15"/>
+        <Modification MoveSpeedBonus="0.2187" AccelerationBonus="1.0625"/>
+        <MaxStackCount value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HasLowEnergy">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterEnergyGE50222"/>
+        <Modification AttackSpeedMultiplier="0.24"/>
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\abilityicon_spawnbroodlings_square.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IncreasingSpeed">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="50"/>
+        <Modification MoveSpeedBonus="0.125"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InhibitorZoneTemporalField">
+        <Modification MoveSpeedMultiplier="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TarPit">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-spearofadun-temporalfield.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMultiplier="0.45"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OutofCombat">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-defilerplague.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterNotInCombat15"/>
+        <Modification MoveSpeedBonus="0.1484">
+            <VitalRegenArray index="Energy" value="5"/>
+        </Modification>
+        <VitalRegenVitalsRemain index="Energy" AmountMissing="0.01"/>
+        <VitalRegenVitalsRemainPercent index="Energy" AmountMissing="0.01" RegenModification="-0.1015"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BroodlingStrikeImpactTint">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-ignorearmor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BroodlingImpactTintUnnamed">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-huntermissile-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RollAttackBaseline">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Shanked">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\talent-zagara-level08-incubatebroodlings.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.625"/>
+        <Modification>
+            <MoveSpeedMultiplier value="0.75"/>
+            <AttackSpeedMultiplier value="0.75"/>
+            <RangedWeaponRange value="-2"/>
+            <WeaponMinRange value="-2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Steroids">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <SightBonus value="5"/>
+            <MoveSpeedMultiplier value="10"/>
+            <AttackSpeedMultiplier value="10"/>
+            <WeaponRange value="8"/>
+            <UnitNameOverride value="Behavior/Name/Steroids/NameOverride"/>
+            <DamageDealtFraction index="Melee" value="1"/>
+            <VitalMaxFractionArray index="Life" value="1"/>
+            <VitalMaxFractionArray index="Shields" value="1"/>
+            <VitalRegenMultiplier index="Life" value="1"/>
+            <VitalRegenMultiplier index="Shields" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HasHighEnergy">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterEnergyGE5022"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TemporarilyStop">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DurationRandomMin value="16"/>
+        <Modification MoveSpeedMaximum="0.0117">
+            <StateFlags index="Bury" value="1"/>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="TrackedEscort">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorUnitTracker>
+</Catalog>

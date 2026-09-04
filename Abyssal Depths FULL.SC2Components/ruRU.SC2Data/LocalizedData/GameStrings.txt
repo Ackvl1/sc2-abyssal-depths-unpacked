@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=Сканер контроля поверхности небесных тел обнаружил большие запасы ресурсов на планете 37/тип C. Но есть сложность: ценное сырье находится на дне океана.<n/><n/>Карта с конкурса TL Map Contest, проводимого при поддержке Shopify.<n/>Автор: KillerSmile
+DocInfo/DescShort=1х1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- Эффект HDR трещин уменьшен до 1.0.
+DocInfo/PatchNote003=- Подкорректированы уступы в центре карты.
+DocInfo/PatchNote004=- Изменены уступы, на которые могут взбираться головорезы: их геометрия сохранена, но на них больше нельзя размещать танки в осадном режиме.
+MapInfo/Player00/Name=Нейтральный
+MapInfo/Player01/Name=Игрок 1
+MapInfo/Player02/Name=Игрок 2
+MapInfo/Player03/Name=Враг

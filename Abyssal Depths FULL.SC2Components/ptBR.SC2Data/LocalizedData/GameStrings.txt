@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=O scanner de superfície interplanetário encontrou grandes quantidades de recursos no planeta 37/ conjunto de dados C. Só tem um porém: ele está no fundo do mar.<n/><n/>Enviado para o Concurso de Mapas da TL promovido pela Shopify<n/>Criado por KillerSmile
+DocInfo/DescShort=1x1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- HDR de rachaduras reduzido para 1,0
+DocInfo/PatchNote003=- Ajustes nos penhascos no meio do mapa
+DocInfo/PatchNote004=- Atualização nos penhascos de Exterminador. A forma original foi mantida, mas não é mais possível cercar com um tanque
+MapInfo/Player00/Name=Neutro
+MapInfo/Player01/Name=Jogador 1
+MapInfo/Player02/Name=Jogador 2
+MapInfo/Player03/Name=Inimigo

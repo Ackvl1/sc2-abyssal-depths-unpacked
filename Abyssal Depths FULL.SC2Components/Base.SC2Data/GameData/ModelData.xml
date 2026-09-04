@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="BroodLordBWeapon"/>
+    <CModel id="BroodLordEx12" parent="Unit" Race="Zerg">
+        <Model value="Assets\Models\BroodLordGerminator3.m3"/>
+        <RequiredAnims value="Assets\Units\Zerg\BroodLord_SwarmAnims\BroodLord_SwarmAnims.m3a"/>
+        <AnimBlendTime value="0.400000"/>
+        <Events>
+            <Anim value="Stand,00"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.916000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.600000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.625000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="2.793000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.663000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="2.041000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,02"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="1.754000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Lighting value="BroodLordEx1"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow08"/>
+        <Radius value="0.850000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.700000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow08"/>
+        <Tipability value="0.750000"/>
+        <UnitGlossaryCamera value="Star2CameraLow08"/>
+    </CModel>
+    <CModel id="BroodLordEx122" parent="Unit" Race="Zerg">
+        <Model value="Assets\Units\Zerg\BroodLordEx1\BroodLordEx1.m3"/>
+        <RequiredAnims value="Assets\Units\Zerg\BroodLord_SwarmAnims\BroodLord_SwarmAnims.m3a"/>
+        <AnimBlendTime value="0.400000"/>
+        <Events>
+            <Anim value="Stand,00"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.916000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.600000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.625000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="2.793000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.663000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="2.041000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,02"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="1.754000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Lighting value="BroodLordEx1"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow08"/>
+        <Radius value="0.850000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.700000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow08"/>
+        <Tipability value="0.750000"/>
+        <UnitGlossaryCamera value="Star2CameraLow08"/>
+    </CModel>
+    <CModel id="BroodLordEx123" parent="Unit" Race="Zerg">
+        <Model value="Assets\Models\BroodLordDreamhacker2.m3"/>
+        <RequiredAnims value="Assets\Units\Zerg\BroodLord_SwarmAnims\BroodLord_SwarmAnims.m3a"/>
+        <AnimBlendTime value="0.400000"/>
+        <Events>
+            <Anim value="Stand,00"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.916000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,00"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.600000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.625000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Walk,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="2.793000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="0.663000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,01"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="2.041000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,02"/>
+            <Name value="BroodLord_wings"/>
+            <Type value="Sound"/>
+            <Time value="1.754000"/>
+            <Payload value="BroodLord_wings"/>
+        </Events>
+        <Lighting value="BroodLordEx1"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow08"/>
+        <Radius value="0.850000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionOffset value="0.000000,0.000000,-0.700000"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="1.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value="Star2CameraLow08"/>
+        <Tipability value="0.750000"/>
+        <UnitGlossaryCamera value="Star2CameraLow08"/>
+    </CModel>
+    <CModel id="Broodling">
+        <Model value="Assets\Units\Zerg\Symbiote_Ex3\Symbiote_Ex3.m3"/>
+    </CModel>
+    <CModel id="DOM_VentTower">
+        <Events index="0" Type="Unknown"/>
+        <Events index="1" Type="Unknown"/>
+    </CModel>
+    <CModel id="InhibitorZoneTemporalFieldImpactModel">
+        <ScaleMax value="0.010000,0.010000,0.010000"/>
+        <ScaleMin value="0.010000,0.010000,0.010000"/>
+    </CModel>
+    <CModel id="Korhal_PerimeterWall">
+        <Model value="Assets\Doodads\DestructibleWallCorner9045\DestructibleWallCorner9045.m3"/>
+    </CModel>
+</Catalog>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirementAnd id="And"/>
+    <CRequirementAnd id="AndAnd">
+        <OperandArray value="And"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueued4117925924">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3AndOrEqCountBehaviorHasHighEnergyQueuedOrBetterAtUn3926706734"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedO1512576801">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit5"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedO3008082452">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorDisableMovementQueuedOrBetter1EqCountBehaviorDisableMovement2QueuedOnly0">
+        <OperandArray value="EqCountBehaviorDisableMovementQueuedOrBetter1"/>
+        <OperandArray value="EqCountBehaviorDisableMovement2QueuedOnly0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorDisableMovementQueuedOrBetterAtUnit0">
+        <OperandArray value="EqCountBehaviorDisableMovementQueuedOrBetterAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="EqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0"/>
+        <OperandArray value="EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0"/>
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit5">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="EqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0"/>
+        <OperandArray value="EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0"/>
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit5"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="EqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1"/>
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLT263461205CountUnitAutoTurretInProgressOrBetter8LTCountUpgradeTurretBuildCounterQueuedOrBetter8NotCountBehaviorColdCompleteOnlyAtUnitNotCountBehaviorFrostbiteCompleteOnlyAtUnit">
+        <OperandArray value="LT263461205CountUnitAutoTurretInProgressOrBetter8"/>
+        <OperandArray value="LTCountUpgradeTurretBuildCounterQueuedOrBetter8"/>
+        <OperandArray value="NotCountBehaviorColdCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorFrostbiteCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLT3730171456CountUnitPsiIndoctrinatorInProgressOrBetter6LTCountUpgradePsiDisruptorBuildCounterQueuedOrBetter6NotCountBehaviorColdCompleteOnlyAtUnitNotCountBehaviorFrostbiteCompleteOnlyAtUnit">
+        <OperandArray value="LT3730171456CountUnitPsiIndoctrinatorInProgressOrBetter6"/>
+        <OperandArray value="LTCountUpgradePsiDisruptorBuildCounterQueuedOrBetter6"/>
+        <OperandArray value="NotCountBehaviorColdCompleteOnlyAtUnit"/>
+        <OperandArray value="NotCountBehaviorFrostbiteCompleteOnlyAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUnitBroodlingEscortQueuedOrBetterAtUnit1EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1"/>
+        <OperandArray value="EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUnitBroodlingEscortQueuedOrBetterAtUnit2EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0">
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit2"/>
+        <OperandArray value="EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit0"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUnitBroodlingEscortQueuedOrBetterAtUnit5EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit1EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0">
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit5"/>
+        <OperandArray value="EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit1"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0"/>
+        <OperandArray value="EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndLTCountUnitBroodlingEscortQueuedOrBetterAtUnit8EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit0">
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit8"/>
+        <OperandArray value="EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit0"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndOrEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="OrEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1"/>
+        <OperandArray value="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AlphaZombieBurrowing" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AlphaZombieUnburrowing" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDisableMovement2QueuedOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="DisableMovement2"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDisableMovementQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="DisableMovement" State="QueuedOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDisableMovementQueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="DisableMovement" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorHasHighEnergyCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HasHighEnergy" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorHasHighEnergyQueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="HasHighEnergy" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorHasLowEnergyQueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="HasLowEnergy" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSiegeInitial2QueuedOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="SiegeInitial2" State="QueuedOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementEq id="EqCountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountBehaviorAlphaZombieBurrowingCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountBehaviorAlphaZombieUnburrowingCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorDisableMovement2QueuedOnly0">
+        <OperandArray index="0" value="CountBehaviorDisableMovement2QueuedOnly"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorDisableMovementQueuedOrBetter1">
+        <OperandArray index="0" value="CountBehaviorDisableMovementQueuedOrBetter"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorDisableMovementQueuedOrBetterAtUnit0">
+        <OperandArray index="0" value="CountBehaviorDisableMovementQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit0">
+        <OperandArray index="0" value="CountBehaviorHasHighEnergyCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorHasHighEnergyCompleteOnlyAtUnit1">
+        <OperandArray index="0" value="CountBehaviorHasHighEnergyCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountBehaviorHasHighEnergyQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountBehaviorHasHighEnergyQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountBehaviorHasLowEnergyQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountBehaviorHasLowEnergyQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorSiegeInitial2QueuedOrBetterAtUnit1">
+        <OperandArray index="0" value="CountBehaviorSiegeInitial2QueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementLT id="LT263461205CountUnitAutoTurretInProgressOrBetter8">
+        <OperandArray index="0" value="CountUnitAutoTurretInProgressOrBetter"/>
+        <OperandArray index="1" value="8"/>
+    </CRequirementLT>
+    <CRequirementLT id="LT3730171456CountUnitPsiIndoctrinatorInProgressOrBetter6">
+        <OperandArray index="0" value="CountUnitPsiIndoctrinatorInProgressOrBetter"/>
+        <OperandArray index="1" value="6"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1">
+        <OperandArray index="0" value="CountUnitBroodlingEscortQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3">
+        <OperandArray index="0" value="CountUnitBroodlingEscortQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit5">
+        <OperandArray index="0" value="CountUnitBroodlingEscortQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="5"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUnitBroodlingEscortQueuedOrBetterAtUnit8">
+        <OperandArray index="0" value="CountUnitBroodlingEscortQueuedOrBetterAtUnit"/>
+        <OperandArray index="1" value="8"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradePsiDisruptorBuildCounterQueuedOrBetter6">
+        <OperandArray index="0" value="CountUpgradePsiDisruptorBuildCounterQueuedOrBetter"/>
+        <OperandArray index="1" value="6"/>
+    </CRequirementLT>
+    <CRequirementLT id="LTCountUpgradeTurretBuildCounterQueuedOrBetter8">
+        <OperandArray index="0" value="CountUpgradeTurretBuildCounterQueuedOrBetter"/>
+        <OperandArray index="1" value="8"/>
+    </CRequirementLT>
+    <CRequirementOr id="Or">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3AndOrEqCountBehaviorHasHighEnergyQueuedOrBetterAtUn3926706734">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3"/>
+        <OperandArray value="AndOrEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1"/>
+        <OperandArray value="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit3"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrAndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit5">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1LTCountUnitBroodlingEscortQueuedOrBetterAtUnit1"/>
+        <OperandArray value="AndEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit0EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit0LTCountUnitBroodlingEscortQueuedOrBetterAtUnit5"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrEqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="EqCountBehaviorHasHighEnergyQueuedOrBetterAtUnit1"/>
+        <OperandArray value="EqCountBehaviorHasLowEnergyQueuedOrBetterAtUnit1"/>
+    </CRequirementOr>
+    <CRequirementCountUpgrade id="UpgradeBroodLord2CompleteOnly">
+        <Count Link="Xenoray"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="UpgradeBroodLord2QueuedOrBetter">
+        <Count Link="Xenoray"/>
+    </CRequirementCountUpgrade>
+</Catalog>

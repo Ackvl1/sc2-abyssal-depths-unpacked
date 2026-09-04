@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTerrain id="Black"/>
+    <CTerrain id="HybridLabXelNaga">
+        <BlendTextures index="0" value="CharDunes_2"/>
+        <BlendTextures index="1" value="Elsecaro5"/>
+        <BlendTextures index="2" value="ShadowCorps7"/>
+        <BlendTextures index="3" value="MonlythDunes"/>
+        <BlendTextures index="4" value="MonlythSand"/>
+        <BlendTextures index="5" value="CastanarRock"/>
+        <BlendTextures index="6" value="JarbanMinor_Jungle6"/>
+        <BlendTextures index="7" value="IceWorld7"/>
+        <CliffSets index="0" value="MoebiusLabCliff0"/>
+        <CliffSets index="1" value="AiurEx1Cliff0"/>
+        <FogColor value="255,26,196,204"/>
+        <FogEnabled value="1"/>
+        <FogDensity value="0.240000"/>
+        <FogFalloff value="0.310000"/>
+        <Gravity value="1.000000"/>
+    </CTerrain>
+    <CTerrain id="HybridLabXelNaga2">
+        <EditorCategories value="Climate:InteriorInstallation"/>
+        <Lighting value="HybridLabXelNaga"/>
+        <LoadingScreen value="Assets\Textures\UI_HotS_Loading_PlanetViewHybrid.dds"/>
+        <Ambience value="Ambience_Ulaan"/>
+        <ReverbAmbient value="BetaVerb"/>
+        <MinimapBackgroundColor value="255,0,0,32"/>
+        <BlendTextures value="CharDunes_2"/>
+        <BlendTextures value="Elsecaro5"/>
+        <BlendTextures value="Char2_3"/>
+        <BlendTextures value="MonlythDunes"/>
+        <BlendTextures value="MonlythSand"/>
+        <BlendTextures value="CastanarRock"/>
+        <BlendTextures value="JarbanMinor_Jungle6"/>
+        <BlendTextures value="IceWorld7"/>
+        <HardTiles value="MarSaraTile"/>
+        <CliffSets value="HybridLabXelNagaCliff1"/>
+        <CliffSets value="AiurEx1Cliff0"/>
+        <CliffSets value="MoebiusLabCliff0"/>
+        <FogEnabled value="1"/>
+        <FogColor value="255,26,196,204"/>
+        <FogDensity value="0.240000"/>
+        <FogFalloff value="0.310000"/>
+        <FogStartingHeight value="-0.900000"/>
+        <Gravity value="1.000000"/>
+        <CreepEdgeNormalMap value="Assets\Textures\creepedgenormal_ex2.dds"/>
+    </CTerrain>
+</Catalog>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="CloakFire">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-permanentcloak.dds"/>
+    </CButton>
+    <CButton id="MantaRaySiege">
+        <Icon value="Assets\Textures\abilityicon_spawnbroodlings_square.dds"/>
+    </CButton>
+    <CButton id="MantaRaySiege2">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+    </CButton>
+    <CButton id="MorphtoAbomination2">
+        <Icon value="Assets\Textures\btn-unit-xenowraith.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-xenowraith.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="MorphtoAbomination"/>
+    </CButton>
+    <CButton id="NoxiousCloud2">
+        <Icon value="Assets\Textures\btn-ability-zerg-abduct.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-noxiouscloud.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
+    <CButton id="Siege">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-mutalisk-primalreconstitution.dds"/>
+    </CButton>
+    <CButton id="Siege2">
+        <Icon value="Assets\Textures\btn-command-cancel.dds"/>
+        <HotkeyAlias value="Siege"/>
+    </CButton>
+    <CButton id="SpawnAberration22">
+        <Icon value="Assets\Textures\btn-unit-zerg-aberration.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-aberration.dds"/>
+    </CButton>
+    <CButton id="SpawnBroodlings2">
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\abilityicon_spawnbroodlings_square.dds"/>
+        <AlertIcon value="Assets\Textures\abilityicon_spawnbroodlings_square.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="SpawnBroodlings"/>
+    </CButton>
+    <CButton id="SpawnBroodlings22">
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\talent-zagara-level08-incubatebroodlings.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-zerg-baneling.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+        <HotkeyAlias value="SpawnBroodlings"/>
+    </CButton>
+    <CButton id="SpawnOverseer2">
+        <Icon value="Assets\Textures\btn-unit-xenoray.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-xenoray.dds"/>
+    </CButton>
+    <CButton id="homeostasis">
+        <Icon value="Assets\Textures\btn-ability-zerg-defilerplague.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-defilerplague.dds"/>
+    </CButton>
+</Catalog>

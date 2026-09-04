@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CMoverMissile id="BroodLordBWeapon">
+        <MotionPhases index="0">
+            <Acceleration value="10"/>
+            <Speed value="2.5"/>
+            <MinSpeed value="2.5"/>
+            <MaxSpeed value="2.5"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="BroodLordWeaponLeft">
+        <MotionPhases index="0" MaxSpeed="2.5" ThrowBandYaw="-360,-360,-360,-360" ThrowBandPitch="-360,-360,-360,-360"/>
+        <MotionPhases index="1">
+            <MaxSpeed value="2.5"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="BroodLordWeaponRight">
+        <MotionPhases index="1">
+            <MaxSpeed value="2.5"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+            <YawPitchRoll value="5759.6484"/>
+        </MotionPhases>
+    </CMoverMissile>
+    <CMoverMissile id="GasCloud">
+        <MotionPhases Acceleration="10" Speed="0.1015" MaxSpeed="0.1015"/>
+    </CMoverMissile>
+</Catalog>

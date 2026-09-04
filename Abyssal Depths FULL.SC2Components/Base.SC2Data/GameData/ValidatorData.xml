@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorUnitCompareVital id="CasterEnergyGE502">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="25"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="CasterEnergyGE5022">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="100"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="CasterEnergyGE50222">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="50"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorLocationArc id="CasterFacingTargetWithin902">
+        <WhichLocation Value="SourceUnit"/>
+        <Find value="1"/>
+        <Arc value="29.9926"/>
+        <Value Value="TargetUnitOrPoint"/>
+    </CValidatorLocationArc>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasBehaviorCloakFire">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="CloakFire"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitOrderQueue id="CasterIsAttacking2">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="attack"/>
+        <Find value="0"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorCombine id="IsSieging">
+        <CombineArray value="IsSieging2"/>
+        <CombineArray value="IsSieging22"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="IsSieging2">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="DisableMovement"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="IsSieging22">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="DisableMovement2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="IsSieging222">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="DisableMovement2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="IsSieging23">
+        <WhichUnit Value="CasterOuter"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="DisableMovement"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="MedicTargetNotBeingHealed2">
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Behavior value="MedivacTargetBeingHealed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="NotAttacking2">
+        <CombineArray value="CasterIsAttacking"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitOrderTargetType id="TargetAttacksGround2">
+        <AbilLink value="attack"/>
+    </CValidatorUnitOrderTargetType>
+    <CValidatorUnitOrderTargetType id="TargetAttacksGround22">
+        <AbilLink value="attack"/>
+        <Type value="Point"/>
+    </CValidatorUnitOrderTargetType>
+    <CValidatorUnitFilters id="TargetIsUnit">
+        <Filters value="-;Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorCombine id="TargetIsUnit2">
+        <CombineArray value="TargetIsUnit"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="TargetWithin10Range2">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GT"/>
+        <Range value="2.5"/>
+    </CValidatorLocationCompareRange>
+</Catalog>

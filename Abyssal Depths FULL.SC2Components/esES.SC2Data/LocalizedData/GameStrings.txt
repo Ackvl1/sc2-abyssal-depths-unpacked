@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=El escáner de superficie interplanetario ha detectado una enorme cantidad de recursos en el planeta 37 (conjunto de datos C). ¿El problema? Que están en el fondo del océano.<n/><n/>Enviado al TLMC patrocinado por Shopify<n/>Creado por KillerSmile
+DocInfo/DescShort=1 vs 1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- Las fisuras HDR se han ajustado a 1,0.
+DocInfo/PatchNote003=- Se han ajustado los acantilados del centro del mapa.
+DocInfo/PatchNote004=- Actualización de los acantilados de segadores: Se mantiene la forma original, pero ya no es posible poner un tanque en modo asedio sobre ellos.
+MapInfo/Player00/Name=Neutral
+MapInfo/Player01/Name=Jugador 1
+MapInfo/Player02/Name=Jugador 2
+MapInfo/Player03/Name=Hostil

@@ -1,0 +1,10 @@
+﻿DocInfo/DescLong=星际扫描仪在37号行星/C区数据集上发现了大量的资源。这些资源来自于海底。<n/><n/>Shopify赞助TLMC作品<n/>作者：KillerSmile
+DocInfo/DescShort=1v1
+DocInfo/Name=Oh No It's Zombies Abyssal Depths
+DocInfo/PatchNote002=- 裂纹HDR降低至1.0
+DocInfo/PatchNote003=- 调整地图中间的悬崖
+DocInfo/PatchNote004=- 收割者悬崖更新——保持原来的形状，但不再可以在上方展开攻城坦克
+MapInfo/Player00/Name=中立
+MapInfo/Player01/Name=玩家1
+MapInfo/Player02/Name=玩家2
+MapInfo/Player03/Name=敌对

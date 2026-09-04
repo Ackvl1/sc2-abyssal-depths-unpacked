@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <ModType>
+        <Value>Interface</Value>
+    </ModType>
+    <Icon>
+        <Value>ui_mapinfo_abyssalreef.dds</Value>
+    </Icon>
+    <Dependencies>
+        <Value>file:Mods\Oh No It's Zombies Abyssal Depths Map.SC2Mod</Value>
+        <Value>file:Mods\Oh No It's Zombies Semice Mod.SC2Mod</Value>
+        <Value>file:Mods\Oh No It's Zombies Semice Art Mod.SC2Mod</Value>
+    </Dependencies>
+    <Screenshot>
+        <File>
+            <Value>ui_screenshot_abyssalreef_1.tga</Value>
+        </File>
+    </Screenshot>
+    <Preload>
+        <Value>Bank;onizstats</Value>
+    </Preload>
+</DocInfo>

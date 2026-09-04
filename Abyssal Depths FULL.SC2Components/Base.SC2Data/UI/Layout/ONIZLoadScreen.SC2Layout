@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+	<!-- Constants -->
+	<!-- Note: &lt;n/&gt; causes a new line in text. -->
+	<Constant name="MapName" val="Oh No It's Zombies"/>
+	<Constant name="MapSubtitle" val="Abyssal Depths"/>
+	<Constant name="HowToPlayTitle1" val="                          MARINES"/>
+	<Constant name="HowToPlaySection1" val="Mine gas, buy weapons, structures and more at Weapons Lockers and defend the station's key facilities from zombies until dropship fueling is complete. Then, the three dropship hangars open up and you must hold on for several more minutes before the dropships leave. &lt;n/&gt; &lt;n/&gt; You win by escaping on a dropship when it leaves. "/>
+	<Constant name="HowToPlayTitle2" val="                           ZOMBIE"/>
+	<Constant name="HowToPlaySection2" val=" Mutate new zombie strains, spawn massive Alpha Zombies and evolve upgrades to infest the station room by room. You gain powerful abilities when infesting key facilities. &lt;n/&gt; &lt;n/&gt; You win by preventing all players from escaping on dropships or capturing all players at the same time."/>
+	<Constant name="NewsTitle" val=""/>
+	<Constant name="NewsSection" val=""/>
+	<Constant name="Footer" val="Original map by Jeetestu"/>
+	<Constant name="CopyText" val="Click to copy link to discord!"/>
+	<Constant name="CopyLink" val="https://discord.gg/R52aSTh"/>
+	<Constant name="CopyText2" val="Chulleyboy's patreon"/>
+	<Constant name="CopyLink2" val="https://www.patreon.com/Chulleyboy_"/>
+	<Constant name="Background" val="Assets\Textures\ui_loading_abyssalreef.dds"/>
+
+	<!-- Local Templates -->
+	<Frame type="Frame" name="CopyButtonTemplate">
+		<Width val="288"/>
+		<Height val="152"/>
+
+		<Frame type="CopyClipboardButton" name="ClipBoardBtn">
+			<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+			<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+			
+			<ClipboardText val="#CopyLink"/>
+			<DisplayType val="ImageLayer"/>
+			<ClickSound val="@UI_ActionButtonSelect"/>
+			<HoverSound val="@UI_HoverTick"/>
+			<Width val="288"/>
+			<Height val="76"/>
+
+			<Frame type="Image" name="NormalImage">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<StateCount val="1"/>
+				<LayerCount val="4"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Normal" layer="0"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Down" layer="1"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Selected" layer="2"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Disabled" layer="3"/>
+				<TextureType val="EndCap" layer="0"/>
+				<TextureType val="EndCap" layer="1"/>
+				<TextureType val="EndCap" layer="2"/>
+				<TextureType val="EndCap" layer="3"/>
+				<Tiled val="true"/>
+				<DesaturateOnDisable val="false"/>
+			</Frame>
+
+			<Frame type="Image" name="HoverImage">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<StateCount val="1"/>
+				<LayerCount val="4"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Hover" layer="0"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Down" layer="1"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Selected" layer="2"/>
+				<Texture val="@UI/Glues_Battlenet_StandardButton_Disabled" layer="3"/>
+				<TextureType val="EndCap" layer="0"/>
+				<TextureType val="EndCap" layer="1"/>
+				<TextureType val="EndCap" layer="2"/>
+				<TextureType val="EndCap" layer="3"/>
+				<Tiled val="true"/>
+				<DesaturateOnDisable val="false"/>
+			</Frame>
+
+			<Frame type="Label" name="Label">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="3"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="20"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="-20"/>
+				<Style val="BattlenetStandardButton"/>
+				<Text val="#CopyText"/>
+			</Frame>
+
+			<Frame type="Frame" name="HitTestFrame">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+			</Frame>			
+		</Frame>	
+
+		<Frame type="Frame" name="Popup">
+			<Anchor side="Bottom" relative="$parent/ClipBoardBtn" pos="Min" offset="0"/>
+			<Anchor side="Left" relative="$parent/ClipBoardBtn" pos="Min" offset="0"/>
+			<Anchor side="Right" relative="$parent/ClipBoardBtn" pos="Max" offset="0"/>
+			<Width val="288"/>
+			<Height val="76"/>
+			<Alpha val="0"/>	
+			
+			<Frame type="Image" name="GameplayBackground">
+				<Anchor relative="$parent"/>
+				<TextureType val="Nineslice"/>
+				<Texture val="@UI/SC2_UI_Coop_Loading_GameplayBg"/>
+			</Frame>
+			
+			<Frame type="Label" name="Header">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="BattlenetAlternateButton"/>
+				<Text val="Link copied to clipboard!"/>
+			</Frame>
+			
+			<Animation name="Show">
+				<Event event="OnClick" action="Reset,Play" frame="$parent/ClipBoardBtn"/>
+					 
+				<Controller type="Fade" end="Pause">
+					<Key type="Curve" time="0" value="0" in="Slow"/>
+					<Key type="Curve" time="0.5" value="255" in="Slow"/>
+					<Key type="Curve" time="5" value="255" in="Slow"/>
+					<Key type="Curve" time="5.5" value="0" in="Slow"/>					
+				</Controller>
+				<Controller type="Dimension" dimension="Width" relative="False" percentage="True" end="Pause">
+					<Key type="Curve" time="0" value="0"/>
+					<Key type="Curve" time="0.5" value="100"/>
+					<Key type="Curve" time="5" value="100"/>
+					<Key type="Curve" time="5.5" value="0"/>					
+				</Controller>	
+				<Controller type="Dimension" dimension="Height" relative="False" percentage="True" end="Pause">
+					<Key type="Curve" time="0" value="0"/>
+					<Key type="Curve" time="0.5" value="100"/>
+					<Key type="Curve" time="5" value="100"/>
+					<Key type="Curve" time="5.5" value="0"/>					
+				</Controller>					
+			</Animation>	
+			
+		</Frame>
+	</Frame>
+
+	<!-- ========== BELOW IS THE BEGINNING OF THE ACTUAL FRAME ========== -->
+	<Frame type="Frame" name="ONIZLoadingScreen">
+		<Anchor relative="$parent"/>
+
+		<!-- The background image -->
+		<Frame type="Image" name="LoadScreenImage">
+			<Anchor relative="$parent"/>									
+			<Texture val="#Background"/>
+		</Frame>
+
+		<!-- The title for the loading screen -->
+		<Frame type="Label" name="Lbl_Title">
+			<Anchor side="Top" relative="$parent" pos="Min" offset="-900"/>
+			<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+			<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+			<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+			<Style val="CreditsVeryLargeHeading_HotS"/>
+			<Text val="#MapName"/>
+			<Width val="950"/>
+			<Height val="150"/>		
+            <Color val="202,145,249"/>	
+		</Frame>	
+
+        <Frame type="Label" name="Lbl_Subtitle">
+			<Anchor side="Top" relative="$parent" pos="Min" offset="-800"/>
+			<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+			<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+			<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+			<Style val="Greybox_StandardTextButtonLarge"/>
+			<Text val="#MapSubtitle"/>
+			<Width val="950"/>
+			<Height val="150"/>		
+            <Color val="180, 180, 180"/>	
+		</Frame>	
+
+		<!-- How to play -->
+		<Frame type="Frame" name="=HowToPlay_Frame">
+			<Anchor side="Top" relative="$parent" pos="Min" offset="-500"/>
+			<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+			<Anchor side="Left" relative="$parent" pos="Min" offset="-1400"/>
+			<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+			
+
+			<Frame type="Label" name="HowToPlayTitle1_Label">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="LabTubeTitle"/>
+				<Color val="202,204,206"/>	
+				<Text val="#HowToPlayTitle1"/>
+				<Width val="500"/>
+				<Height val="100"/>		
+			</Frame>	
+
+			<Frame type="Label" name="HowToPlaySection1_Label">
+				<Anchor side="Top" relative="$parent/HowToPlayTitle1_Label" pos="Min" offset="50"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="LabTubeText"/>
+				<Color val="202,204,206"/>	
+				<Text val="#HowToPlaySection1"/>
+				<Width val="500"/>
+				<Height val="400"/>		
+			</Frame>	
+
+			<Frame type="Label" name="HowToPlayTitle2_Label">
+				<Anchor side="Top" relative="$parent/HowToPlaySection1_Label" pos="Min" offset="300"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="LabTubeTitle"/>
+				<Color val="202,145,249"/>	
+				<Text val="#HowToPlayTitle2"/>
+				<Width val="500"/>
+				<Height val="100"/>		
+			</Frame>	
+
+			<Frame type="Label" name="HowToPlaySection2_Label">
+				<Anchor side="Top" relative="$parent/HowToPlayTitle2_Label" pos="Min" offset="50"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="LabTubeText"/>
+				<Color val="202,145,249"/>	
+				<Text val="#HowToPlaySection2"/>
+				<Width val="500"/>
+				<Height val="400"/>		
+			</Frame>	
+
+			<Frame type="Label" name="Footer">
+				<Anchor side="Top" relative="$parent/HowToPlaySection2_Label" pos="Min" offset="300"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="LabTubeTitle"/>
+				<Text val="#Footer"/>
+				<Width val="500"/>
+				<Height val="100"/>		
+			</Frame>
+		</Frame>
+
+		<!-- News -->
+		<Frame type="Frame" name="=News_Frame">
+			<Anchor side="Top" relative="$parent" pos="Min" offset="-500"/>
+			<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+			<Anchor side="Left" relative="$parent" pos="Min" offset="1400"/>
+			<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+			
+
+			<Frame type="Label" name="NewsTitle_Label">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="LabTubeTitle"/>
+				<Color val="255,255,0"/>	
+				<Text val="#NewsTitle"/>
+				<Width val="500"/>
+				<Height val="100"/>		
+			</Frame>	
+
+			<Frame type="Label" name="NewsSection_Label">
+				<Anchor side="Top" relative="$parent/NewsTitle_Label" pos="Min" offset="50"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Style val="LabTubeText"/>
+				<Text val="#NewsSection"/>
+				<Width val="500"/>
+				<Height val="800"/>		
+			</Frame>	
+		</Frame>
+		
+		<!-- Copy Paste Buttons -->
+		<Frame type="Frame" name="=CopyPasteButtons_Frame">
+			<Anchor side="Top" relative="$parent" pos="Min" offset="200"/>
+			<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+			<Anchor side="Left" relative="$parent" pos="Min" offset="1350"/>
+			<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+
+			<Frame type="Frame" name="CopyDiscord" template="ONIZLoadScreen/CopyButtonTemplate">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+
+				<Frame type="CopyClipboardButton" name="ClipBoardBtn">
+					<ClipboardText val="#CopyLink"/>
+	
+					<Frame type="Label" name="Label">
+						<Text val="#CopyText"/>
+					</Frame>		
+				</Frame>	
+		
+				<Frame type="Frame" name="Popup">
+					<Frame type="Label" name="Header">
+						<Text val="Link copied to clipboard!"/>
+					</Frame>	
+				</Frame>
+			</Frame>
+		
+			<Frame type="Frame" name="CopyPatreon" template="ONIZLoadScreen/CopyButtonTemplate">
+				<Anchor side="Top" relative="$parent/CopyDiscord" pos="Min" offset="100"/>
+				<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+	
+	
+				<Frame type="CopyClipboardButton" name="ClipBoardBtn">
+					<ClipboardText val="#CopyLink2"/>
+		
+					<Frame type="Label" name="Label">
+						<Text val="#CopyText2"/>
+					</Frame>		
+				</Frame>	
+			
+				<Frame type="Frame" name="Popup">
+					<Frame type="Label" name="Header">
+						<Text val="Link copied to clipboard!"/>
+					</Frame>	
+				</Frame>
+			</Frame>	
+		</Frame>	
+	</Frame>
+</Desc>

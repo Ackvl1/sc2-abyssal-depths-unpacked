@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BankList>
+    <Bank Name="COCampaign" Player="1"/>
+    <Bank Name="COCampaign" Player="2"/>
+    <Bank Name="COCampaign" Player="3"/>
+    <Bank Name="COCampaign" Player="4"/>
+    <Bank Name="COCampaign" Player="5"/>
+    <Bank Name="COCampaign" Player="6"/>
+    <Bank Name="COCampaign" Player="7"/>
+    <Bank Name="onizstats" Player="1"/>
+    <Bank Name="onizstats" Player="2"/>
+    <Bank Name="onizstats" Player="3"/>
+    <Bank Name="onizstats" Player="4"/>
+    <Bank Name="onizstats" Player="5"/>
+    <Bank Name="onizstats" Player="6"/>
+    <Bank Name="onizstats" Player="7"/>
+</BankList>

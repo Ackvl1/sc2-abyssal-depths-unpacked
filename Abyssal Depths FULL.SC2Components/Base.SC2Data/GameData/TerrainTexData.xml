@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTerrainTex id="BelShirGrassDark2">
+        <Texture value="Assets\Textures\black_canvas_opaquenormal.dds"/>
+        <Normalmap value="Assets\Textures\black_canvas_opaquenormal.dds"/>
+        <EditorIcon value="Assets\Textures\ui-editoricon-Bel_Shir_Grass_Dark.dds"/>
+        <DoodadEntry>
+            <Model value="PlantMixBelShir"/>
+            <RandomRotation value="1"/>
+            <Probability value="0.100000"/>
+            <PlacementRadius value="1.000000"/>
+        </DoodadEntry>
+        <DoodadEntry>
+            <Model value="DynamicGrassBelShir"/>
+            <RandomRotation value="1"/>
+            <Probability value="0.500000"/>
+            <PlacementRadius value="1.000000"/>
+        </DoodadEntry>
+    </CTerrainTex>
+</Catalog>

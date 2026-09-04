@@ -1,0 +1,10 @@
+# Mods 是外部依赖（未解包 SC2Mod，419M），本机经 API 推送单文件超 100MB 限制，暂不传
+Mods/
+
+# 原始地图（已在仓库说明里标注来源，可选保留；此处不忽略以便复现）
+# Abyssal Depths FULL.SC2Map
+
+# 临时诊断脚本（已清理，防御性保留）
+probe*.py
+diag*.py
+extract_sc2.py

@@ -140,7 +140,7 @@ def load_protected() -> Dict[str, str]:
 
 def build_package(pkg: str, tr: Dict[str, str], protected_all: Dict[str, str]) -> Dict[str, int]:
     protected = protected_all if pkg in PROTECTED_PKGS else {}
-    stat = {"keys": 0, "translated": 0, "protected": 0, "untranslated": 0}
+    stat = {"keys": 0, "translated": 0, "protected": 0, "untranslated": 0, "mirrored": 0}
     for fname in TEXT_FILES:
         en_text = read_pkg_text(pkg, "enUS", fname)
         if en_text is None:
@@ -177,6 +177,22 @@ def build_package(pkg: str, tr: Dict[str, str], protected_all: Dict[str, str]) -
         n = write_zhcn_text(target, out)
         log.info("%s/%s zhCN: 写出 %d 行 (译 %d / 原版保留 %d / 未译 %d) -> %s",
                  pkg, fname, n, stat["translated"], stat["protected"], stat["untranslated"], target)
+
+    # GameHotkeys + TriggerStrings: 原样镜像(不翻, 让 zhCN 文件集与 enUS 一致, 避免某些编辑器对 locale 文件缺失告警)
+    for mirror_fname in ("GameHotkeys", "TriggerStrings"):
+        en_text = read_pkg_text(pkg, "enUS", mirror_fname)
+        if en_text is None:
+            continue
+        pairs = parse_kv(en_text)
+        out: List[Tuple[str, str]] = []
+        for key, en in pairs:
+            out.append((key, en))
+            stat["mirrored"] += 1
+        target = (os.path.join(FULL_FOLDER, "zhCN.SC2Data", "LocalizedData", f"{mirror_fname}.txt")
+                  if pkg == "FULLMap" else
+                  os.path.join(OUT_DIR, pkg, "zhCN.SC2Data", "LocalizedData", f"{mirror_fname}.txt"))
+        n = write_zhcn_text(target, out)
+        log.info("%s/%s zhCN: 镜像 %d 行 (不翻) -> %s", pkg, mirror_fname, n, target)
     return stat
 
 

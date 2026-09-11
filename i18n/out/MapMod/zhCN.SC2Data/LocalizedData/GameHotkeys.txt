@@ -1,0 +1,11 @@
+﻿Button/Hotkey/CloakFire=C
+Button/Hotkey/MantaRaySiege=E
+Button/Hotkey/MantaRaySiege2=E
+Button/Hotkey/MorphtoAbomination2=G
+Button/Hotkey/NoxiousCloud2=E
+Button/Hotkey/Siege=R
+Button/Hotkey/Siege2=R
+Button/Hotkey/SpawnAberration22=Q
+Button/Hotkey/SpawnBroodlings2=Q
+Button/Hotkey/SpawnBroodlings22=Q
+Button/Hotkey/SpawnOverseer2=C

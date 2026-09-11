@@ -5,9 +5,4 @@
     <DataComponent Type="text" Locale="enUS">GameText</DataComponent>
     <DataComponent Type="text" Locale="zhCN">GameText</DataComponent>
     <DataComponent Type="info">DocumentInfo</DataComponent>
-    <DataComponent Type="mapi">MapInfo</DataComponent>
-    <DataComponent Type="terr">t3Terrain.xml</DataComponent>
-    <DataComponent Type="plob">Objects</DataComponent>
-    <DataComponent Type="regi">Regions</DataComponent>
-    <DataComponent Type="uiui">UI/Layout/DescIndex.SC2Layout</DataComponent>
 </Components>

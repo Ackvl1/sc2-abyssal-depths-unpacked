@@ -1,0 +1,3 @@
+﻿DocInfo/DescLong=ONIZ 的美术模组
+DocInfo/DescShort=任意
+DocInfo/Name=Oh No It's Zombies Semice 美术模组

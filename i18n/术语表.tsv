@@ -1,0 +1,136 @@
+en	zh	type	note
+Extractor	萃取机	facility	非法采集装置，会侵蚀房间
+Virophage	噬菌体	unit	僵尸方破坏门的单位
+Security Mainframe	安全主控	facility	人类方核心系统
+Containment Facility	收容设施	facility	关押标本的设施
+Fuel Distribution Center	燃料分配中心	facility	燃料配送
+Vespene Processing Facility	瓦斯处理设施	facility	 
+Rich Vespene Processing Facility	富瓦斯处理设施	facility	 
+Processing Facilities	处理设施	facility	 
+Spec Ops Labs	特种作战实验室	facility	 
+Weapons Locker	武器柜	facility	购买装备处
+Locker	柜子	facility	武器柜简称
+Hangar	机库	facility	 
+Sub-Level	地下层	facility	 
+Sub Level	地下层	facility	 
+Security Zone	安全区	facility	 
+Excavation Zone	挖掘区	facility	 
+Manufacturing Sector	制造区	facility	 
+Gate	闸门	facility	 
+Gate Control	闸门控制	facility	 
+Door	门	facility	 
+Power Generator	发电机	facility	 
+Primary Power Generator	主发电机	facility	 
+Secondary Generator	副发电机	facility	 
+Creep Tower	菌毯塔	unit	僵尸方建筑
+Sunken Colony	沉陷虫巢	unit	 
+Nydus Worm	虫道虫	unit	 
+Hive Mind	虫巢意志	mechanic	僵尸方全局意识
+Hive Queen	虫巢女王	unit	终极变异
+Queen	女王	unit	 
+Alpha Zombie	阿尔法僵尸	unit	 
+Zombie	僵尸	unit	 
+Zombies	僵尸	unit	 
+Human	人类	side	 
+Humans	人类	side	 
+Infestation	感染	mechanic	 
+Infested	被感染	state	 
+Ultimate Infestation	终极感染	mechanic	 
+Creep	菌毯	mechanic	 
+creep	菌毯	mechanic	 
+Strain	株系	mechanic	僵尸变异株
+Strains	株系	mechanic	 
+Strain Supply	株系补给	mechanic	 
+Biomass	生物质	mechanic	 
+Cocoon	茧	unit	被捕获的人类/变异容器
+Cocoons	虫茧	unit	 
+Prisoner	囚犯	unit	 
+Specimen	标本	unit	 
+Alpha Zombies	阿尔法僵尸	unit	 
+Abomination	憎恶	unit	 
+Aberration	畸变体	unit	 
+Anubalisk	阿努巴利斯克	unit	 
+Anubalight	阿努巴莱特	unit	 
+Oculus	眼魔	unit	 
+Overseer	督军	unit	 
+Primal Ultralisk	原始雷兽	unit	 
+Predator	掠食者	unit	 
+Hunter	猎手	unit	 
+Geneweaver	织基因者	unit	 
+Genesplicer	基因剪接者	unit	 
+Dreamhacker	梦境骇客	unit	 
+Dreamcatcher	捕梦者	unit	 
+Cerberus	地狱犬	unit	 
+Leviathan Tentacle	利维坦触须	unit	 
+Legion Zombie	军团僵尸	unit	 
+Legionnaire Zombie	军团士兵僵尸	unit	机械/人类方
+Mechanical Repair Drone	机械维修无人机	unit	 
+Mining Droid	采矿机器人	unit	 
+Repair Drone	维修无人机	unit	 
+Exploration Droid	勘探机器人	unit	 
+Auto Turret	自动炮塔	unit	 
+Heavy Turret	重型炮塔	unit	 
+Flame Turret	火焰炮塔	unit	 
+Security Turret	安全炮塔	unit	 
+Sentry	哨兵	unit	 
+Turrets	炮塔	unit	 
+Security Bots	安保机器人	unit	 
+Commando	突击队	unit	 
+Marine	陆战队员	unit	 
+Medic	医疗兵	unit	 
+Medics	医疗兵	unit	 
+Dropship	运输船	unit	 
+War Pig	战猪	unit	 
+Mechanic Suit	机械师装甲	item	武器柜装备
+Combat Suit	战斗装甲	item	武器柜装备
+Weapons Locker	武器柜	ui	 
+Power Generators	发电机	facility	 
+Security Mainframe	安全主控	facility	 
+Aimbot	自瞄	ui	 
+Psi Disrupter	幽能干扰器	item	 
+Psi Disrupters	幽能干扰器	item	 
+Mining Charge	采矿炸药	item	 
+Mining Charges	采矿炸药	item	 
+Refinery	精炼厂	facility	 
+Vespene	瓦斯	resource	 
+Supply	补给	resource	 
+Minerals	水晶	resource	 
+Interact	互动	ui	 
+Opt-In	报名	ui	 
+Opt-in	报名	ui	 
+Surrender	投降	ui	 
+Vote	投票	ui	 
+Kick	踢出	ui	 
+Refund	退款	ui	 
+Unlock	解锁	ui	 
+Upgrade	升级	ui	 
+Upgrades	升级	ui	 
+Stats	统计	ui	 
+Score	分数	ui	 
+Cosmetics	外观	ui	 
+Skins	皮肤	ui	 
+Rank	军衔	ui	 
+Ranks	军衔	ui	 
+Pings	标记	ui	 
+Ping	标记	ui	 
+Idle Rally	待机集结	ui	 
+Alert	警报	ui	 
+Warning	警告	ui	 
+CRITICAL ALERT	严重警报	ui	 
+Games Played	对战场次	ui	 
+Wins	胜场	ui	 
+Patch Note	更新说明	ui	 
+How to Play	玩法说明	ui	 
+BETA	测试版	ui	 
+Class 1 Infestation	1 级感染	ui	 
+Class 2 Infestation	2 级感染	ui	 
+Class 3 Infestation	3 级感染	ui	 
+Class 4 Infestation	4 级感染	ui	 
+Class 5 Infestation	5 级感染	ui	 
+Class 6 Infestation	6 级感染	ui	 
+CLASS ONE INFESTATION	一级感染	ui	 
+CLASS TWO INFESTATION	二级感染	ui	 
+CLASS THREE INFESTATION	三级感染	ui	 
+CLASS FOUR INFESTATION	四级感染	ui	 
+CLASS FIVE INFESTATION	五级感染	ui	 
+CLASS SIX INFESTATION	六级感染	ui	 

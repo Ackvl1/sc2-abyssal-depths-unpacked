@@ -1,0 +1,42 @@
+{
+  "packages": {
+    "FULLMap": "D:\\Users\\ex_chenjp28\\Downloads\\海底_Abyssal\\Abyssal Depths FULL.SC2Components",
+    "MapMod": "D:\\Users\\ex_chenjp28\\Downloads\\海底_Abyssal\\Mods\\Oh No It's Zombies Abyssal Depths Map.SC2Mod",
+    "SemiceMod": "D:\\Users\\ex_chenjp28\\Downloads\\海底_Abyssal\\Mods\\Oh No It's Zombies Semice Mod.SC2Mod",
+    "SemiceArt": "D:\\Users\\ex_chenjp28\\Downloads\\海底_Abyssal\\Mods\\Oh No It's Zombies Semice Art Mod.SC2Mod"
+  },
+  "lines_total": 17248,
+  "lines_player_visible": 9994,
+  "unique_units": 7147,
+  "by_class": {
+    "name": 5412,
+    "editor-only": 5108,
+    "internal-name": 2141,
+    "trigger-text": 1847,
+    "unknown": 1569,
+    "tip": 1069,
+    "visible-other": 97,
+    "param-expression": 4,
+    "hotkey": 1
+  },
+  "by_class_visible": {
+    "name": 5412,
+    "trigger-text": 1847,
+    "unknown": 1569,
+    "tip": 1069,
+    "visible-other": 97
+  },
+  "by_pkg_visible": {
+    "SemiceMod": 8217,
+    "FULLMap": 887,
+    "MapMod": 887,
+    "SemiceArt": 3
+  },
+  "flag_counts": {
+    "punct-only": 122,
+    "empty-value": 96,
+    "no-letters": 37,
+    "markup-only": 2
+  },
+  "chars_total_en": 439342
+}
